@@ -28,13 +28,13 @@ const CollaborationHero = () => {
             </div>
 
             {/* Main Heading */}
-            <h1 className="text-headline text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
+            <h1 className="text-headline md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
               Musical Partnerships That
               <span className="block text-primary mt-2">Define Excellence</span>
             </h1>
 
             {/* Subtitle */}
-            <p className="text-body text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-12 leading-relaxed">
+            <p className="text-body md:text-xl text-muted-foreground max-w-3xl mx-auto mb-12 leading-relaxed">
               Discover the collaborative journey with music industry legends—from Grammy-nominated productions 
               to chart-topping compositions that bridge classical heritage with contemporary innovation.
             </p>

@@ -186,7 +186,7 @@ const MasterclassSection = () => {
               </div>
 
               {/* Action Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4">
+              {/* <div className="flex flex-col sm:flex-row gap-4">
                 <Button
                   variant="default"
                   size="lg"
@@ -207,7 +207,7 @@ const MasterclassSection = () => {
                 >
                   Download Materials
                 </Button>
-              </div>
+              </div> */}
             </div>
           </div>
 

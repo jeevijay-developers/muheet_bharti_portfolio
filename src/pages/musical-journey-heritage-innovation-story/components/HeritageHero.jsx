@@ -9,7 +9,7 @@ const HeritageHero = () => {
 
   const ancestralImages = [
     {
-      src: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1200&h=800&fit=crop',
+      src: '/assets/images/classic_musicians.jpg',
       alt: 'Ancient Indian classical musician with traditional instruments',
       era: '1500s - Court of Akbar',
       description: 'Mian Tansen, the legendary founder of Senia Gharana'
@@ -21,7 +21,7 @@ const HeritageHero = () => {
       description: 'Generations of masters preserving the sacred tradition'
     },
     {
-      src: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1200&h=800&fit=crop',
+      src: '/assets/images/concert.jpg',
       alt: 'Modern studio with traditional instruments',
       era: '2020s - Contemporary Fusion',
       description: 'Muheet Bharti - Grammy nominated innovation'
@@ -56,6 +56,7 @@ const HeritageHero = () => {
               alt={image?.alt}
               className="w-full h-full object-cover heritage-morph"
             />
+            <div className="absolute inset-0 bg-black/40" />
             <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/60 to-background/90" />
           </div>
         ))}
@@ -72,9 +73,9 @@ const HeritageHero = () => {
           </div>
 
           {/* Main Heading */}
-          <h1 className="text-headline text-5xl lg:text-7xl font-bold text-foreground mb-6 leading-tight">
+          <h1 className="text-headline lg:text-7xl font-bold text-white mb-6 leading-tight">
             Where Centuries of
-            <span className="block text-primary grammy-glow">
+            <span className="block text-primary ">
               Tradition Meet
             </span>
             <span className="block text-accent">
@@ -83,29 +84,29 @@ const HeritageHero = () => {
           </h1>
 
           {/* Subtitle */}
-          <p className="text-body text-xl lg:text-2xl text-muted-foreground mb-8 leading-relaxed max-w-3xl mx-auto">
+          <p className="text-xl lg:text-2xl text-white/80 mb-8 leading-relaxed max-w-3xl mx-auto">
             {ancestralImages?.[currentImageIndex]?.description}
           </p>
 
           {/* Heritage Stats */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-12">
             <div className="text-center">
-              <div className="text-headline text-4xl lg:text-5xl font-bold text-primary mb-2">
+              <div className="text-headline lg:text-5xl font-bold text-primary mb-2">
                 500+
               </div>
-              <p className="text-body text-muted-foreground">Years of Heritage</p>
+              <p className="text-body text-white/80">Years of Heritage</p>
             </div>
             <div className="text-center">
-              <div className="text-headline text-4xl lg:text-5xl font-bold text-accent mb-2">
+              <div className="text-4xl lg:text-5xl font-bold text-accent mb-2">
                 18
               </div>
-              <p className="text-body text-muted-foreground">Generations</p>
+              <p className="text-body text-white/80">Generations</p>
             </div>
             <div className="text-center">
-              <div className="text-headline text-4xl lg:text-5xl font-bold text-secondary mb-2">
+              <div className="text-headline lg:text-5xl font-bold text-accent mb-2">
                 1
               </div>
-              <p className="text-body text-muted-foreground">Grammy Nomination</p>
+              <p className="text-body text-white/80">Grammy Nomination</p>
             </div>
           </div>
 
@@ -125,7 +126,7 @@ const HeritageHero = () => {
             <Button
               variant="outline"
               size="lg"
-              className="musical-hover"
+              className="musical-hover text-white/80"
               iconName="ArrowDown"
               iconPosition="right"
               iconSize={20}
@@ -150,7 +151,7 @@ const HeritageHero = () => {
                   />
                 ))}
               </div>
-              <span className="text-sm text-muted-foreground">Senia Gharana Ambience</span>
+              <span className="text-sm text-white/80">Senia Gharana Ambience</span>
             </div>
           )}
         </div>
@@ -174,7 +175,7 @@ const HeritageHero = () => {
       </div>
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 right-8 z-10 hidden lg:block">
-        <div className="flex flex-col items-center space-y-2 text-muted-foreground">
+        <div className="flex flex-col items-center space-y-2 text-white/80">
           <span className="text-sm rotate-90 origin-center whitespace-nowrap">Scroll to explore</span>
           <div className="w-px h-12 bg-border">
             <div className="w-px h-6 bg-primary animate-pulse" />

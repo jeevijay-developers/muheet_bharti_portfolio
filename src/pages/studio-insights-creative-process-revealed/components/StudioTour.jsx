@@ -47,7 +47,7 @@ const StudioTour = () => {
       id: 3,
       name: "Production Suite",
       description: "State-of-the-art mixing and mastering facility where traditional recordings meet contemporary production standards.",
-      image: "https://images.pixabay.com/photo-2016/11/29/13/14/attractive-1869761_1280.jpg?w=800&h=600&fit=crop",
+      image: "/assets/images/suite.webp",
       equipment: [
         "Logic Pro X & Pro Tools",
         "Native Instruments Komplete",
@@ -192,7 +192,7 @@ const StudioTour = () => {
             </div>
 
             {/* Action Buttons */}
-            <div className="space-y-3">
+            {/* <div className="space-y-3">
               <Button
                 variant="default"
                 fullWidth
@@ -213,7 +213,7 @@ const StudioTour = () => {
               >
                 Listen to Room Tone
               </Button>
-            </div>
+            </div> */}
           </div>
         </div>
 

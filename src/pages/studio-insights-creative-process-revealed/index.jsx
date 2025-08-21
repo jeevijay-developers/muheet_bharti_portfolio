@@ -6,6 +6,9 @@ import StudioTour from './components/StudioTour';
 import AudioComparisons from './components/AudioComparisons';
 import MasterclassSection from './components/MasterclassSection';
 import EquipmentShowcase from './components/EquipmentShowcase';
+import { FaSquareInstagram } from "react-icons/fa6";
+import { FaYoutube } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 const StudioInsightsPage = () => {
   return (
@@ -45,14 +48,15 @@ const StudioInsightsPage = () => {
               </p>
               
               <div className="flex space-x-4">
-                <div className="w-8 h-8 bg-background/10 rounded-full flex items-center justify-center hover:bg-primary musical-transition cursor-pointer">
-                  <span className="text-xs">🎵</span>
+                <div className="w-10 h-10 bg-background/10 rounded-full flex items-center justify-center hover:bg-primary musical-transition cursor-pointer">
+                  <a href="https://www.instagram.com/muheetbharti/" target="_blank" rel="noopener noreferrer">
+                    <span className="text-xs"><FaSquareInstagram className='size-7 text-pink-600 bg-white rounded-full p-1' /></span>
+                  </a>
                 </div>
-                <div className="w-8 h-8 bg-background/10 rounded-full flex items-center justify-center hover:bg-primary musical-transition cursor-pointer">
-                  <span className="text-xs">📱</span>
-                </div>
-                <div className="w-8 h-8 bg-background/10 rounded-full flex items-center justify-center hover:bg-primary musical-transition cursor-pointer">
-                  <span className="text-xs">🎬</span>
+                <div className="w-10 h-10 bg-background/10 rounded-full flex items-center justify-center hover:bg-primary musical-transition cursor-pointer">
+                  <a href="https://www.youtube.com/@MuheetBhartiOfficial" target="_blank" rel="noopener noreferrer">
+                    <span className="text-xs"><FaYoutube className='size-7 text-red-600 bg-white rounded-full p-1' /></span>
+                  </a>
                 </div>
               </div>
             </div>

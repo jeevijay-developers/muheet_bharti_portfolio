@@ -70,7 +70,7 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/50 to-transparent"></div>
       </div>
       {/* Grammy Nomination Graphics */}
-      <div className="absolute top-20 right-8 z-10 hidden lg:block">
+      <div className="absolute top-2 right-8 z-10 hidden lg:block">
         <div className="bg-card/90 backdrop-blur-md rounded-lg p-4 border border-accent/20 grammy-glow">
           <div className="flex items-center space-x-3">
             <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center">
@@ -99,12 +99,12 @@ const HeroSection = () => {
                   </div>
                 </div>
                 
-                <h1 className="text-headline text-5xl lg:text-7xl font-bold text-foreground leading-tight">
+                <h1 className="text-headline lg:text-7xl font-bold text-foreground leading-tight">
                   Where Centuries
                   <span className="block text-primary">Meet Innovation</span>
                 </h1>
                 
-                <p className="text-body text-xl text-muted-foreground max-w-2xl leading-relaxed">
+                <p className="text-body text-muted-foreground max-w-2xl leading-relaxed">
                   Grammy-nominated sitarist bridging ancient Senia Gharana traditions with contemporary global music. 
                   Experience the convergence of 500-year-old wisdom and modern artistry.
                 </p>
@@ -169,7 +169,7 @@ const HeroSection = () => {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-lg"></div>
                     
                     {/* Play Button Overlay */}
-                    <button
+                    {/* <button
                       onClick={togglePlayback}
                       className="absolute inset-0 flex items-center justify-center group"
                     >
@@ -181,21 +181,21 @@ const HeroSection = () => {
                           className="ml-1"
                         />
                       </div>
-                    </button>
+                    </button> */}
                   </div>
 
                   {/* Track Info */}
-                  <div className="space-y-2">
+                  {/* <div className="space-y-2">
                     <h3 className="text-headline text-lg font-semibold text-foreground">
                       {featuredTracks?.[currentTrack]?.title}
                     </h3>
                     <p className="text-muted-foreground text-sm">
                       {featuredTracks?.[currentTrack]?.artist} • {featuredTracks?.[currentTrack]?.duration}
                     </p>
-                  </div>
+                  </div> */}
 
                   {/* Progress Bar */}
-                  <div className="space-y-2">
+                  {/* <div className="space-y-2">
                     <div className="w-full bg-muted rounded-full h-2">
                       <div 
                         className="bg-primary h-2 rounded-full musical-transition"
@@ -206,11 +206,11 @@ const HeroSection = () => {
                       <span>2:15</span>
                       <span>{featuredTracks?.[currentTrack]?.duration}</span>
                     </div>
-                  </div>
+                  </div> */}
 
                   {/* Controls */}
                   <div className="flex items-center justify-between">
-                    <div className="flex items-center space-x-4">
+                    {/* <div className="flex items-center space-x-4">
                       <button
                         onClick={prevTrack}
                         className="p-2 rounded-full hover:bg-muted musical-transition"
@@ -236,10 +236,10 @@ const HeroSection = () => {
                       >
                         <Icon name="SkipForward" size={20} />
                       </button>
-                    </div>
+                    </div> */}
 
                     {/* Volume Control */}
-                    <div className="flex items-center space-x-2">
+                    {/* <div className="flex items-center space-x-2">
                       <Icon name="Volume2" size={16} className="text-muted-foreground" />
                       <input
                         type="range"
@@ -249,7 +249,7 @@ const HeroSection = () => {
                         onChange={handleVolumeChange}
                         className="w-20 h-1 bg-muted rounded-full appearance-none slider"
                       />
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>

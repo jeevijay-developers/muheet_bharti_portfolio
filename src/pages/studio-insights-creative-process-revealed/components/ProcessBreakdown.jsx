@@ -39,8 +39,8 @@ const ProcessBreakdown = () => {
       id: 3,
       title: "Collaborative Recording",
       subtitle: "Artist Integration",
-      description: "Working with renowned artists like Arijit Singh and Shankar Mahadevan to blend their unique styles with classical foundations.",
-      image: "https://images.pixabay.com/photo/2016/11/29/13/14/attractive-1869761_1280.jpg?w=600&h=400&fit=crop",
+      description: "Working with renowned artists like Shreya Ghoshal and Shankar Mahadevan to blend their unique styles with classical foundations.",
+      image: "/assets/celebs/shreya.jpg",
       duration: "8-12 hours",
       tools: ["Pro Tools", "Neumann Microphones", "SSL Console", "Live Room"],
       insights: [
@@ -128,14 +128,14 @@ const ProcessBreakdown = () => {
               <Image
                 src={processSteps?.[activeStep]?.image}
                 alt={processSteps?.[activeStep]?.title}
-                className="w-full h-full object-cover group-hover:scale-105 musical-transition"
+                className="w-full h-full object-cover object-top group-hover:scale-105 musical-transition"
               />
               
               {/* Duration Badge */}
-              <div className="absolute top-4 right-4 bg-black/60 text-white px-3 py-1 rounded-full text-sm">
+              {/* <div className="absolute top-4 right-4 bg-black/60 text-white px-3 py-1 rounded-full text-sm">
                 <Icon name="Clock" size={14} className="inline mr-1" />
                 {processSteps?.[activeStep]?.duration}
-              </div>
+              </div> */}
             </div>
 
             {/* Tools Used */}
@@ -194,7 +194,7 @@ const ProcessBreakdown = () => {
             </div>
 
             {/* Action Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4">
+            {/* <div className="flex flex-col sm:flex-row gap-4">
               <Button
                 variant="default"
                 className="musical-hover"
@@ -213,7 +213,7 @@ const ProcessBreakdown = () => {
               >
                 Download Guide
               </Button>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

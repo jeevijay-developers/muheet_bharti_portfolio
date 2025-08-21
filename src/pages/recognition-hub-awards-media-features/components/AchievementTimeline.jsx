@@ -37,7 +37,7 @@ const AchievementTimeline = () => {
       description: `Honored by the Indian Recording Arts Academy for outstanding contribution to classical fusion music. 
       This recognition celebrates the innovative approach to preserving and evolving traditional Indian classical music.`,
       significance: 'Premier recognition in Indian music industry',
-      image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop',
+      image: '/assets/banners/irraawards.jpg',
       icon: 'Trophy',
       color: 'primary'
     },
@@ -51,7 +51,7 @@ const AchievementTimeline = () => {
       The article highlighted the unique approach to bridging generational gaps in music appreciation 
       and bringing classical music to contemporary audiences.`,
       significance: 'Major music publication recognition',
-      image: 'https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=400&h=300&fit=crop',
+      image: '/assets/banners/banner1.jpg',
       icon: 'Newspaper',
       color: 'secondary'
     },

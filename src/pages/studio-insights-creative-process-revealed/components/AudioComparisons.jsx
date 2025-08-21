@@ -132,7 +132,7 @@ const AudioComparisons = () => {
             <span className="text-accent font-semibold text-lg">Audio Evolution</span>
           </div>
           
-          <h2 className="text-headline text-3xl lg:text-5xl font-bold text-foreground mb-6">
+          <h2 className="text-headline lg:text-5xl font-bold text-foreground mb-6">
             Raw to
             <span className="text-primary block">Grammy Standard</span>
           </h2>
@@ -274,7 +274,7 @@ const AudioComparisons = () => {
               Download high-quality audio samples and detailed production breakdowns to understand 
               the complete transformation process from traditional to Grammy-nominated productions.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            {/* <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
                 variant="default"
                 size="lg"
@@ -295,7 +295,7 @@ const AudioComparisons = () => {
               >
                 Read Production Guide
               </Button>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

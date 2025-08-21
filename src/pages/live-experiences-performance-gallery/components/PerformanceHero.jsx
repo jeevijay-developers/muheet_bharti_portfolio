@@ -103,7 +103,7 @@ const PerformanceHero = () => {
               />
               
               {/* Video Overlay */}
-              <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
+              {/* <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
                 <button
                   onClick={handlePlayVideo}
                   className="w-20 h-20 bg-white/90 rounded-full flex items-center justify-center musical-hover group shadow-lg"
@@ -115,7 +115,7 @@ const PerformanceHero = () => {
                     className="text-primary ml-1 group-hover:scale-110 musical-transition" 
                   />
                 </button>
-              </div>
+              </div> */}
 
               {/* Video Info Overlay */}
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">

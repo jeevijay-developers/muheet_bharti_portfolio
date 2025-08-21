@@ -10,54 +10,48 @@ const RotatingShowcase = () => {
 
   const showcaseSections = [
     {
-      id: 'heritage',
-      title: 'Senia Gharana Legacy',
-      subtitle: '18 Generations of Musical Excellence',
-      description: `Carrying forward a 500-year-old musical tradition that began with Mian Tansen himself. 
-      Each generation has contributed to the evolution of this sacred art form, 
-      blending classical purity with contemporary expression.`,
-      image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop',
+      id: 'gurdas-maan',
+      title: 'Gurdas Maan — Punjabi Folk Legend',
+      subtitle: 'Iconic voice of Punjab, singer–songwriter and actor',
+      description: `Widely regarded as a pioneer of Punjabi music with classics like "Dil Da Mamla Hai". National Award winner and cultural icon, he continues to inspire generations.`,
+      image: '/assets/celebs/gurdas.jpg',
       icon: 'Crown',
       color: 'primary',
-      link: '/musical-journey-heritage-innovation-story',
+      link: '/collaborations-industry-relationships-showcase',
       stats: [
-        { label: 'Generations', value: '18' },
-        { label: 'Years of Tradition', value: '500+' },
-        { label: 'Classical Ragas Mastered', value: '200+' }
+        { label: 'Genre', value: 'Punjabi folk/Bhangra' },
+        { label: 'Years Active', value: '1979–present' },
+        { label: 'Notable', value: 'Ki Banu Duniya Da' }
       ]
     },
     {
-      id: 'grammy',
-      title: 'Grammy Recognition',
-      subtitle: 'Best World Music Album Nomination',
-      description: `Official Grammy nomination recognizing the fusion of traditional Indian classical music 
-      with contemporary global sounds. This achievement represents years of dedication to 
-      bridging cultural musical boundaries.`,
-      image: 'https://images.pexels.com/photos/164821/pexels-photo-164821.jpeg?w=800&h=600&fit=crop',
+      id: 'sidhu-moose-wala',
+      title: 'Sidhu Moose Wala — Hip-Hop Trailblazer',
+      subtitle: 'Global Punjabi rap icon and record-breaking artist',
+      description: `Rose to fame with "So High" and albums like PBX 1 and Moosetape. First Indian to perform at Wireless Festival, with multiple international charting tracks.`,
+      image: '/assets/celebs/siddhu.jpg',
       icon: 'Award',
       color: 'accent',
       link: '/recognition-hub-awards-media-features',
       stats: [
-        { label: 'Grammy Category', value: 'World Music' },
-        { label: 'Year Nominated', value: '2024' },
-        { label: 'Global Recognition', value: 'Achieved' }
+        { label: 'Genre', value: 'Hip hop/Desi rap' },
+        { label: 'Milestone', value: 'Wireless Festival' },
+        { label: 'Years Active', value: '2016–2022' }
       ]
     },
     {
-      id: 'collaborations',
-      title: 'Legendary Collaborations',
-      subtitle: 'Working with Music Icons',
-      description: `Collaborative works with industry legends including Arijit Singh, Shankar Mahadevan, 
-      and Salim-Sulaiman. These partnerships showcase the versatility and universal appeal 
-      of classical Indian music in contemporary settings.`,
-      image: 'https://images.pixabay.com/photo/2016/11/23/15/48/audience-1853662_1280.jpg?w=800&h=600&fit=crop',
+      id: 'salim-sulaiman',
+      title: 'Salim–Sulaiman — Bollywood Composer Duo',
+      subtitle: 'Celebrated music directors behind iconic film scores',
+      description: `Acclaimed for scores and songs in films like Chak De! India, Rab Ne Bana Di Jodi and Fashion, with global collaborations and major awards.`,
+      image: '/assets/celebs/salim.jpg',
       icon: 'Users',
       color: 'secondary',
       link: '/collaborations-industry-relationships-showcase',
       stats: [
-        { label: 'Major Collaborations', value: '50+' },
-        { label: 'Industry Legends', value: '15+' },
-        { label: 'Chart-Topping Tracks', value: '25+' }
+        { label: 'Role', value: 'Composers/Producers' },
+        { label: 'Notable', value: 'Chak De! India' },
+        { label: 'Years Active', value: '1993–present' }
       ]
     }
   ];
@@ -94,10 +88,10 @@ const RotatingShowcase = () => {
             <Icon name="Sparkles" size={24} className="text-primary" />
             <div className="w-12 h-0.5 bg-primary ml-4"></div>
           </div>
-          <h2 className="text-headline text-4xl lg:text-5xl font-bold text-foreground mb-4">
+          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-4">
             Musical Excellence
           </h2>
-          <p className="text-body text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Discover the three pillars that define Muheet Bharti's extraordinary musical journey
           </p>
         </div>
@@ -116,7 +110,7 @@ const RotatingShowcase = () => {
                 />
               </div>
               <div>
-                <h3 className="text-headline text-2xl font-bold text-foreground">
+                <h3 className="text-2xl font-bold text-foreground">
                   {currentSection?.title}
                 </h3>
                 <p className="text-accent font-accent text-lg">
@@ -126,7 +120,7 @@ const RotatingShowcase = () => {
             </div>
 
             {/* Description */}
-            <p className="text-body text-lg text-muted-foreground leading-relaxed">
+            <p className="text-lg text-muted-foreground leading-relaxed">
               {currentSection?.description}
             </p>
 
@@ -177,10 +171,10 @@ const RotatingShowcase = () => {
                 <div className="bg-card/90 backdrop-blur-md rounded-lg p-4 border border-border">
                   <div className="flex items-center justify-between">
                     <div>
-                      <p className="font-semibold text-foreground">
+                      <p className="font-semibold text-white/80">
                         {currentSection?.title}
                       </p>
-                      <p className="text-sm text-muted-foreground">
+                      <p className="text-sm text-white/70">
                         {currentSection?.subtitle}
                       </p>
                     </div>

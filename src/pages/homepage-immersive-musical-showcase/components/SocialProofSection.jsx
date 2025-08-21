@@ -70,22 +70,22 @@ const SocialProofSection = () => {
 
   const mediaFeatures = [
     {
-      outlet: "Rolling Stone India",
+      outlet: "Nominated awards",
       headline: "The Grammy-Nominated Sitarist Bridging Centuries",
       date: "March 2024",
-      image: "https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=400&h=300&fit=crop"
+      image: "/assets/banners/awards.jpg"
     },
     {
       outlet: "Billboard",
       headline: "Senia Gharana Tradition Meets Modern Innovation",
       date: "February 2024",
-      image: "https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?w=400&h=300&fit=crop"
+      image: "/assets/banners/billboards.jpg"
     },
     {
       outlet: "The Hindu",
       headline: "18 Generations of Musical Excellence",
       date: "January 2024",
-      image: "https://images.pixabay.com/photo/2016/11/29/13/14/attractive-1869761_1280.jpg?w=400&h=300&fit=crop"
+      image: "/assets/banners/onStage.jpg"
     }
   ];
 

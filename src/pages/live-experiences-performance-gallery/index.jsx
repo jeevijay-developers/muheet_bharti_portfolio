@@ -15,11 +15,11 @@ const LiveExperiencesPerformanceGallery = () => {
       {/* Performance Gallery */}
       <PerformanceGallery />
       {/* Upcoming Shows */}
-      <UpcomingShows />
+      {/* <UpcomingShows /> */}
       {/* Global Performance Map */}
       <PerformanceMap />
       {/* Booking Inquiry */}
-      <BookingInquiry />
+      {/* <BookingInquiry /> */}
       {/* Footer */}
       <footer className="bg-foreground text-background py-12">
         <div className="container mx-auto px-6 lg:px-8">

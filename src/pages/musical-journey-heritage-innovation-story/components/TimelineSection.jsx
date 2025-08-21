@@ -13,7 +13,7 @@ const TimelineSection = () => {
       title: 'Ancestral Roots',
       subtitle: '1500s - 1900s',
       description: `The Senia Gharana tradition begins with Mian Tansen, one of the nine jewels of Emperor Akbar's court. Our family lineage carries forward this 500-year legacy of classical mastery, where each generation has preserved and enriched the sacred ragas that form the foundation of Hindustani classical music.`,
-      image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop',audioSample: 'Raga Yaman - Traditional Alap',
+      image: '/assets/images/ancestoral_image.jpg',audioSample: 'Raga Yaman - Traditional Alap',
       highlights: [
         'Mian Tansen\'s court legacy',
         '18 generations of musical mastery',
@@ -98,10 +98,10 @@ const TimelineSection = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-headline text-4xl lg:text-5xl font-bold text-foreground mb-6">
+          <h2 className="text-headline lg:text-5xl font-bold text-foreground mb-6">
             Musical Journey Through Time
           </h2>
-          <p className="text-body text-lg text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Explore the evolution of musical heritage across generations, from ancient court traditions 
             to Grammy-nominated contemporary fusion
           </p>
@@ -137,7 +137,7 @@ const TimelineSection = () => {
             </div>
             
             {/* Audio Player Overlay */}
-            <div className="absolute bottom-4 left-4 right-4 bg-background/95 backdrop-blur-md rounded-lg p-4 border border-border">
+            {/* <div className="absolute bottom-4 left-4 right-4 bg-background/95 backdrop-blur-md rounded-lg p-4 border border-border">
               <div className="flex items-center justify-between">
                 <div className="flex-1">
                   <p className="text-sm font-medium text-foreground mb-1">
@@ -169,7 +169,7 @@ const TimelineSection = () => {
                   className="ml-4"
                 />
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* Era Details */}
@@ -180,7 +180,7 @@ const TimelineSection = () => {
                   <Icon name="Music" size={20} color="white" />
                 </div>
                 <div>
-                  <h3 className="text-headline text-3xl font-bold text-foreground">
+                  <h3 className="text-headline font-bold text-foreground">
                     {currentEra?.title}
                   </h3>
                   <p className="text-accent text-lg font-medium">
@@ -189,14 +189,14 @@ const TimelineSection = () => {
                 </div>
               </div>
               
-              <p className="text-body text-lg text-muted-foreground leading-relaxed">
+              <p className="text-lg text-muted-foreground leading-relaxed">
                 {currentEra?.description}
               </p>
             </div>
 
             {/* Highlights */}
             <div>
-              <h4 className="text-headline text-xl font-semibold text-foreground mb-4">
+              <h4 className="text-xl font-semibold text-foreground mb-4">
                 Key Highlights
               </h4>
               <div className="grid sm:grid-cols-2 gap-3">
@@ -211,7 +211,7 @@ const TimelineSection = () => {
 
             {/* Cultural Terms */}
             <div>
-              <h4 className="text-headline text-xl font-semibold text-foreground mb-4">
+              <h4 className="text-xl font-semibold text-foreground mb-4">
                 Cultural Glossary
               </h4>
               <div className="space-y-3">

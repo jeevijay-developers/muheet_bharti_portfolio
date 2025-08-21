@@ -26,10 +26,10 @@ const MusicalJourneyPage = () => {
       <section className="py-16 lg:py-24 bg-gradient-to-r from-primary/5 via-accent/5 to-secondary/5">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-headline text-4xl lg:text-5xl font-bold text-foreground mb-8">
+            <h2 className="text-headline lg:text-5xl font-bold text-foreground mb-8">
               A Living Bridge Between Worlds
             </h2>
-            <p className="text-body text-xl text-muted-foreground leading-relaxed mb-12">
+            <p className="text-xl text-muted-foreground leading-relaxed mb-12">
               Muheet Bharti's musical journey represents more than personal achievement—it's a cultural bridge 
               that connects the profound wisdom of ancient Indian classical traditions with the innovative 
               possibilities of contemporary global music. Through Grammy-nominated artistry and collaborations 
@@ -42,7 +42,7 @@ const MusicalJourneyPage = () => {
                 <div className="w-16 h-16 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center mx-auto mb-4 grammy-glow">
                   <span className="text-2xl font-bold text-white">🎵</span>
                 </div>
-                <h3 className="text-headline text-xl font-semibold text-foreground mb-2">
+                <h3 className="text-xl font-semibold text-foreground mb-2">
                   Heritage Preservation
                 </h3>
                 <p className="text-body text-muted-foreground">
@@ -54,7 +54,7 @@ const MusicalJourneyPage = () => {
                 <div className="w-16 h-16 bg-gradient-to-br from-accent to-secondary rounded-full flex items-center justify-center mx-auto mb-4 grammy-glow">
                   <span className="text-2xl font-bold text-white">🌍</span>
                 </div>
-                <h3 className="text-headline text-xl font-semibold text-foreground mb-2">
+                <h3 className="text-xl font-semibold text-foreground mb-2">
                   Global Innovation
                 </h3>
                 <p className="text-body text-muted-foreground">
@@ -66,7 +66,7 @@ const MusicalJourneyPage = () => {
                 <div className="w-16 h-16 bg-gradient-to-br from-secondary to-primary rounded-full flex items-center justify-center mx-auto mb-4 grammy-glow">
                   <span className="text-2xl font-bold text-white">🏆</span>
                 </div>
-                <h3 className="text-headline text-xl font-semibold text-foreground mb-2">
+                <h3 className="text-xl font-semibold text-foreground mb-2">
                   Industry Recognition
                 </h3>
                 <p className="text-body text-muted-foreground">
@@ -76,7 +76,7 @@ const MusicalJourneyPage = () => {
             </div>
             
             <div className="bg-background/80 backdrop-blur-sm rounded-2xl p-8 border border-border shadow-grandeur">
-              <blockquote className="text-body text-2xl text-foreground italic leading-relaxed">
+              <blockquote className="text-2xl text-foreground italic leading-relaxed">
                 "Music is the universal language that transcends all boundaries. My journey is about 
                 ensuring that the profound wisdom of our ancestors continues to resonate in the hearts 
                 of future generations, while embracing the infinite possibilities that lie ahead."
