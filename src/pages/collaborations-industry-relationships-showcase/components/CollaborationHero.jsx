@@ -1,6 +1,6 @@
-import React from 'react';
-import Icon from '../../../components/AppIcon';
-import Image from '../../../components/AppImage';
+import React from "react";
+import Icon from "../../../components/AppIcon";
+import Image from "../../../components/AppImage";
 
 const CollaborationHero = () => {
   return (
@@ -24,7 +24,9 @@ const CollaborationHero = () => {
             {/* Badge */}
             <div className="inline-flex items-center px-6 py-3 bg-primary/10 border border-primary/20 rounded-full mb-8 grammy-glow">
               <Icon name="Award" size={20} className="text-primary mr-3" />
-              <span className="text-primary font-semibold text-sm tracking-wide">INDUSTRY COLLABORATIONS</span>
+              <span className="text-primary font-semibold text-sm tracking-wide">
+                INDUSTRY COLLABORATIONS
+              </span>
             </div>
 
             {/* Main Heading */}
@@ -42,20 +44,36 @@ const CollaborationHero = () => {
             {/* Stats Grid */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
               <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-primary mb-2">25+</div>
-                <div className="text-sm text-muted-foreground font-medium">Legendary Artists</div>
+                <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
+                  25+
+                </div>
+                <div className="text-sm text-muted-foreground font-medium">
+                  Legendary Artists
+                </div>
               </div>
               <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-accent mb-2">50M+</div>
-                <div className="text-sm text-muted-foreground font-medium">Streams Worldwide</div>
+                <div className="text-3xl md:text-4xl font-bold text-accent mb-2">
+                  50M+
+                </div>
+                <div className="text-sm text-muted-foreground font-medium">
+                  Streams Worldwide
+                </div>
               </div>
               <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-secondary mb-2">15</div>
-                <div className="text-sm text-muted-foreground font-medium">Chart Toppers</div>
+                <div className="text-3xl md:text-4xl font-bold text-secondary mb-2">
+                  15
+                </div>
+                <div className="text-sm text-muted-foreground font-medium">
+                  Chart Toppers
+                </div>
               </div>
               <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-primary mb-2">8</div>
-                <div className="text-sm text-muted-foreground font-medium">Award Winners</div>
+                <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
+                  8
+                </div>
+                <div className="text-sm text-muted-foreground font-medium">
+                  Award Winners
+                </div>
               </div>
             </div>
           </div>
@@ -65,28 +83,32 @@ const CollaborationHero = () => {
             {[
               {
                 name: "Arijit Singh",
-                image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=300&h=300&fit=crop&crop=face",
+                image:
+                  "https://scontent.fjdh1-2.fna.fbcdn.net/v/t39.30808-6/310440311_460161376147334_5922898089465705691_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=O3VSlM4fF9IQ7kNvwHgPeEh&_nc_oc=AdmIKmOwjheMfOb8WUfTsSBNz8hdijq37CoiHNEt5Plm_aC0hZgxdwpR-01sx62mgQimQCRVCDuruvJ6rDjQbWVw&_nc_zt=23&_nc_ht=scontent.fjdh1-2.fna&_nc_gid=RG7k-M8E3gVtxQaDsW55Ew&oh=00_AfWgJZNfJnER-sXAOFMeH6dMl67mmBu1lB9oNjUdGxTZHA&oe=68ACEDF7",
                 role: "Playback Singer",
-                projects: "12 Songs"
+                projects: "12 Songs",
               },
               {
                 name: "Shankar Mahadevan",
-                image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&crop=face",
+                image:
+                  "https://c.saavncdn.com/artists/Shankar_Mahadevan_500x500.jpg",
                 role: "Composer",
-                projects: "8 Albums"
+                projects: "8 Albums",
               },
               {
                 name: "Salim-Sulaiman",
-                image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face",
+                image:
+                  "https://c.saavncdn.com/artists/Salim_Merchant_002_20231030074556_500x500.jpg",
                 role: "Music Directors",
-                projects: "6 Films"
+                projects: "6 Films",
               },
               {
                 name: "A.R. Rahman",
-                image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&h=300&fit=crop&crop=face",
+                image:
+                  "https://i.pinimg.com/736x/b2/9f/38/b29f3871d90e7e35d86fd1cf9b8ec19c.jpg",
                 role: "Oscar Winner",
-                projects: "4 Compositions"
-              }
+                projects: "4 Compositions",
+              },
             ]?.map((collaborator, index) => (
               <div key={index} className="group cursor-pointer">
                 <div className="relative overflow-hidden rounded-xl bg-card shadow-contemplative musical-hover">
@@ -99,11 +121,17 @@ const CollaborationHero = () => {
                   </div>
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                   <div className="absolute bottom-4 left-4 right-4 text-white">
-                    <h3 className="font-semibold text-sm mb-1">{collaborator?.name}</h3>
-                    <p className="text-xs opacity-80 mb-1">{collaborator?.role}</p>
-                    <p className="text-xs opacity-60">{collaborator?.projects}</p>
+                    <h3 className="font-semibold text-sm mb-1">
+                      {collaborator?.name}
+                    </h3>
+                    <p className="text-xs opacity-80 mb-1">
+                      {collaborator?.role}
+                    </p>
+                    <p className="text-xs opacity-60">
+                      {collaborator?.projects}
+                    </p>
                   </div>
-                  
+
                   {/* Play Button Overlay */}
                   <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 musical-transition">
                     <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center shadow-lg">
