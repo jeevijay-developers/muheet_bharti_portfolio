@@ -1,78 +1,100 @@
-import React, { useState } from 'react';
-import Icon from '../../../components/AppIcon';
-import Image from '../../../components/AppImage';
+import React, { useState } from "react";
+import Icon from "../../../components/AppIcon";
+import Image from "../../../components/AppImage";
 
 const CollaborationTimeline = () => {
-  const [selectedYear, setSelectedYear] = useState('2024');
+  const [selectedYear, setSelectedYear] = useState("2024");
   const [playingAudio, setPlayingAudio] = useState(null);
 
   const timelineData = {
-    '2024': [
+    2024: [
       {
         id: 1,
         artist: "Arijit Singh",
         project: "Raag Fusion Symphony",
         type: "Album",
-        image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&h=300&fit=crop",
-        description: "A groundbreaking fusion of classical ragas with contemporary arrangements, featuring Muheet's sitar compositions.",
-        achievements: ["#1 on iTunes India", "50M+ Streams", "Critics\' Choice Award"],
+        image:
+          "https://i.pinimg.com/736x/48/d0/a4/48d0a43a2f533bd999ce5de0a9bce629.jpg",
+        description:
+          "A groundbreaking fusion of classical ragas with contemporary arrangements, featuring Muheet's sitar compositions.",
+        achievements: [
+          "#1 on iTunes India",
+          "50M+ Streams",
+          "Critics' Choice Award",
+        ],
         genre: "Classical Fusion",
         duration: "3:45",
-        streams: "12.5M"
+        streams: "12.5M",
       },
       {
         id: 2,
         artist: "Shankar Mahadevan",
         project: "Heritage Echoes",
         type: "Film Score",
-        image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=300&fit=crop",
-        description: "Emotional film score blending traditional Indian instruments with orchestral arrangements.",
+        image:
+          "https://i.pinimg.com/736x/1f/7a/4b/1f7a4b3396f57da0aede69bc49be1b97.jpg",
+        description:
+          "Emotional film score blending traditional Indian instruments with orchestral arrangements.",
         achievements: ["Filmfare Nomination", "IIFA Best Music", "25M+ Views"],
         genre: "Film Music",
         duration: "4:12",
-        streams: "8.3M"
-      }
+        streams: "8.3M",
+      },
     ],
-    '2023': [
+    2023: [
       {
         id: 3,
         artist: "Salim-Sulaiman",
         project: "Urban Ragas",
         type: "Commercial Album",
-        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop",
-        description: "Modern interpretation of classical ragas for contemporary audiences, featuring electronic elements.",
-        achievements: ["Platinum Certification", "MTV Award", "International Recognition"],
+        image:
+          "https://i.pinimg.com/736x/6d/de/81/6dde8142d2b4c83802abc6fe2e4b002e.jpg",
+        description:
+          "Modern interpretation of classical ragas for contemporary audiences, featuring electronic elements.",
+        achievements: [
+          "Platinum Certification",
+          "MTV Award",
+          "International Recognition",
+        ],
         genre: "Electronic Fusion",
         duration: "5:23",
-        streams: "15.7M"
+        streams: "15.7M",
       },
       {
         id: 4,
         artist: "A.R. Rahman",
         project: "Timeless Melodies",
         type: "Soundtrack",
-        image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=300&fit=crop",
-        description: "Collaborative soundtrack featuring Muheet\'s classical expertise in Rahman\'s signature style.",
-        achievements: ["Oscar Consideration", "Grammy Nomination", "Global Release"],
+        image:
+          "https://i.pinimg.com/736x/80/d3/7a/80d37a93486d8d22209ab9b691909a76.jpg",
+        description:
+          "Collaborative soundtrack featuring Muheet's classical expertise in Rahman's signature style.",
+        achievements: [
+          "Oscar Consideration",
+          "Grammy Nomination",
+          "Global Release",
+        ],
         genre: "World Music",
         duration: "6:18",
-        streams: "22.1M"
-      }
+        streams: "22.1M",
+      },
     ],
-    '2022': [
+    2022: [
       {
         id: 5,
         artist: "Vishal-Shekhar",
         project: "Bollywood Classics Reimagined",
         type: "Remix Album",
-        image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&h=300&fit=crop",
-        description: "Fresh take on Bollywood classics with traditional instruments and modern production.",
+        image:
+          "https://i.pinimg.com/736x/e6/83/0d/e6830d353a683958bdd3c0b9551d6b8e.jpg",
+        description:
+          "Fresh take on Bollywood classics with traditional instruments and modern production.",
         achievements: ["Chart Topper", "Youth Choice Award", "Viral Success"],
         genre: "Bollywood Fusion",
         duration: "4:56",
-        streams: "18.9M"
-      }
-    ]
+        streams: "18.9M",
+      },
+    ],
   };
 
   const years = Object.keys(timelineData)?.sort((a, b) => b - a);
@@ -89,13 +111,16 @@ const CollaborationTimeline = () => {
           <div className="text-center mb-16">
             <div className="inline-flex items-center px-4 py-2 bg-primary/10 border border-primary/20 rounded-full mb-6">
               <Icon name="Clock" size={16} className="text-primary mr-2" />
-              <span className="text-primary font-medium text-sm">COLLABORATION TIMELINE</span>
+              <span className="text-primary font-medium text-sm">
+                COLLABORATION TIMELINE
+              </span>
             </div>
             <h2 className="text-headline text-3xl md:text-4xl font-bold text-foreground mb-4">
               Journey Through Musical Partnerships
             </h2>
             <p className="text-body text-lg text-muted-foreground max-w-2xl mx-auto">
-              Explore the evolution of collaborative masterpieces that have shaped the contemporary music landscape.
+              Explore the evolution of collaborative masterpieces that have
+              shaped the contemporary music landscape.
             </p>
           </div>
 
@@ -108,8 +133,8 @@ const CollaborationTimeline = () => {
                   onClick={() => setSelectedYear(year)}
                   className={`px-6 py-3 rounded-md font-semibold text-sm musical-transition ${
                     selectedYear === year
-                      ? 'bg-primary text-primary-foreground shadow-contemplative'
-                      : 'text-muted-foreground hover:text-primary hover:bg-primary/5'
+                      ? "bg-primary text-primary-foreground shadow-contemplative"
+                      : "text-muted-foreground hover:text-primary hover:bg-primary/5"
                   }`}
                 >
                   {year}
@@ -126,7 +151,10 @@ const CollaborationTimeline = () => {
             {/* Timeline Items */}
             <div className="space-y-12">
               {timelineData?.[selectedYear]?.map((collaboration, index) => (
-                <div key={collaboration?.id} className="relative flex items-start">
+                <div
+                  key={collaboration?.id}
+                  className="relative flex items-start"
+                >
                   {/* Timeline Dot */}
                   <div className="absolute left-6 w-4 h-4 bg-primary rounded-full border-4 border-background shadow-contemplative grammy-glow"></div>
 
@@ -142,17 +170,23 @@ const CollaborationTimeline = () => {
                             className="w-full h-64 lg:h-full object-cover"
                           />
                           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-                          
+
                           {/* Play Button */}
                           <div className="absolute inset-0 flex items-center justify-center">
                             <button
-                              onClick={() => handleAudioToggle(collaboration?.id)}
+                              onClick={() =>
+                                handleAudioToggle(collaboration?.id)
+                              }
                               className="w-16 h-16 bg-primary/90 backdrop-blur-sm rounded-full flex items-center justify-center musical-hover shadow-lg"
                             >
-                              <Icon 
-                                name={playingAudio === collaboration?.id ? "Pause" : "Play"} 
-                                size={24} 
-                                color="white" 
+                              <Icon
+                                name={
+                                  playingAudio === collaboration?.id
+                                    ? "Pause"
+                                    : "Play"
+                                }
+                                size={24}
+                                color="white"
                               />
                             </button>
                           </div>
@@ -177,7 +211,9 @@ const CollaborationTimeline = () => {
                                   {collaboration?.type}
                                 </span>
                               </div>
-                              <p className="text-accent font-semibold mb-2">with {collaboration?.artist}</p>
+                              <p className="text-accent font-semibold mb-2">
+                                with {collaboration?.artist}
+                              </p>
                               <p className="text-body text-muted-foreground leading-relaxed mb-6">
                                 {collaboration?.description}
                               </p>
@@ -187,30 +223,48 @@ const CollaborationTimeline = () => {
                           {/* Achievements */}
                           <div className="mb-6">
                             <h4 className="font-semibold text-foreground mb-3 flex items-center">
-                              <Icon name="Trophy" size={16} className="text-accent mr-2" />
+                              <Icon
+                                name="Trophy"
+                                size={16}
+                                className="text-accent mr-2"
+                              />
                               Key Achievements
                             </h4>
                             <div className="flex flex-wrap gap-2">
-                              {collaboration?.achievements?.map((achievement, i) => (
-                                <span
-                                  key={i}
-                                  className="px-3 py-1 bg-surface border border-border rounded-full text-xs font-medium text-foreground"
-                                >
-                                  {achievement}
-                                </span>
-                              ))}
+                              {collaboration?.achievements?.map(
+                                (achievement, i) => (
+                                  <span
+                                    key={i}
+                                    className="px-3 py-1 bg-surface border border-border rounded-full text-xs font-medium text-foreground"
+                                  >
+                                    {achievement}
+                                  </span>
+                                )
+                              )}
                             </div>
                           </div>
 
                           {/* Stats */}
                           <div className="grid grid-cols-2 gap-6 mb-6">
                             <div className="flex items-center">
-                              <Icon name="Clock" size={16} className="text-muted-foreground mr-2" />
-                              <span className="text-sm text-muted-foreground">Duration: {collaboration?.duration}</span>
+                              <Icon
+                                name="Clock"
+                                size={16}
+                                className="text-muted-foreground mr-2"
+                              />
+                              <span className="text-sm text-muted-foreground">
+                                Duration: {collaboration?.duration}
+                              </span>
                             </div>
                             <div className="flex items-center">
-                              <Icon name="Play" size={16} className="text-muted-foreground mr-2" />
-                              <span className="text-sm text-muted-foreground">Streams: {collaboration?.streams}</span>
+                              <Icon
+                                name="Play"
+                                size={16}
+                                className="text-muted-foreground mr-2"
+                              />
+                              <span className="text-sm text-muted-foreground">
+                                Streams: {collaboration?.streams}
+                              </span>
                             </div>
                           </div>
 
@@ -224,7 +278,7 @@ const CollaborationTimeline = () => {
                                     className="waveform-bar w-1 bg-primary/60 rounded-full animate-pulse"
                                     style={{
                                       height: `${Math.random() * 100 + 20}%`,
-                                      animationDelay: `${i * 0.1}s`
+                                      animationDelay: `${i * 0.1}s`,
                                     }}
                                   ></div>
                                 ))}
@@ -239,7 +293,11 @@ const CollaborationTimeline = () => {
                           {/* Action Buttons */}
                           <div className="flex items-center space-x-4 mt-6">
                             <button className="flex items-center px-4 py-2 bg-primary text-primary-foreground rounded-lg font-medium musical-hover">
-                              <Icon name="ExternalLink" size={16} className="mr-2" />
+                              <Icon
+                                name="ExternalLink"
+                                size={16}
+                                className="mr-2"
+                              />
                               Listen Full Track
                             </button>
                             <button className="flex items-center px-4 py-2 border border-border rounded-lg font-medium text-foreground musical-hover">
