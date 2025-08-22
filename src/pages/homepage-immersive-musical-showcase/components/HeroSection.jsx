@@ -109,9 +109,8 @@ const HeroSection = () => {
                   Experience the convergence of 500-year-old wisdom and modern artistry.
                 </p>
               </div>
-
               {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4">
+              {/* <div className="flex flex-col sm:flex-row gap-4">
                 <Button
                   variant="default"
                   size="lg"
@@ -135,7 +134,7 @@ const HeroSection = () => {
                     View Collaborations
                   </Button>
                 </Link>
-              </div>
+              </div> */}
 
               {/* Social Proof Stats */}
               <div className="grid grid-cols-3 gap-6 pt-8 border-t border-border/50">
