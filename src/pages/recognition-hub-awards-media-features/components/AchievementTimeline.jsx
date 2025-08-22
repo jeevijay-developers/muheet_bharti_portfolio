@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Icon from '../../../components/AppIcon';
 import Image from '../../../components/AppImage';
+import Web3ContactForm from './Web3ContactForm';
 
 const AchievementTimeline = () => {
   const [activeCategory, setActiveCategory] = useState('all');
@@ -132,6 +133,7 @@ const AchievementTimeline = () => {
     : achievements?.filter(achievement => achievement?.category === activeCategory);
 
   return (
+    <>
     <section className="py-12 md:py-16 lg:py-24 bg-background">
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
         {/* Section Header */}
@@ -267,6 +269,10 @@ const AchievementTimeline = () => {
         </div>
       </div>
     </section>
+
+    {/* Web3 Contact Form Section */}
+    <Web3ContactForm />
+    </>
   );
 };
 

@@ -182,7 +182,7 @@ const AudioComparisons = () => {
               </div>
               
               <div className="mt-4">
-                <h3 className="text-headline text-xl font-bold text-foreground mb-2">
+                <h3 className="text-headline font-bold text-foreground mb-2">
                   {audioComparisons?.[activeComparison]?.title}
                 </h3>
                 <p className="text-muted-foreground text-sm">
@@ -267,7 +267,7 @@ const AudioComparisons = () => {
         {/* Call to Action */}
         <div className="mt-16 text-center">
           <div className="bg-gradient-to-r from-primary/10 to-accent/10 p-8 rounded-2xl border border-accent/20">
-            <h3 className="text-headline text-2xl font-bold text-foreground mb-4">
+            <h3 className="text-2xl font-bold text-foreground mb-4">
               Experience the Full Audio Journey
             </h3>
             <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">

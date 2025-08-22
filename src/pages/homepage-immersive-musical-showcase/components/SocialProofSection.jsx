@@ -195,10 +195,10 @@ const SocialProofSection = () => {
         {/* Streaming Platform Stats */}
         <div className="mb-20">
           <div className="text-center mb-12">
-            <h3 className="text-headline text-3xl font-bold text-foreground mb-4">
+            <h3 className="text-3xl font-bold text-foreground mb-4">
               Global Reach
             </h3>
-            <p className="text-body text-lg text-muted-foreground">
+            <p className="text-body text-muted-foreground">
               Streaming across all major platforms worldwide
             </p>
           </div>
@@ -227,10 +227,10 @@ const SocialProofSection = () => {
         {/* Media Features */}
         <div className="mb-12">
           <div className="text-center mb-12">
-            <h3 className="text-headline text-3xl font-bold text-foreground mb-4">
+            <h3 className="text-headline font-bold text-foreground mb-4">
               Media Coverage
             </h3>
-            <p className="text-body text-lg text-muted-foreground">
+            <p className="text-lg text-muted-foreground">
               Featured in leading music publications
             </p>
           </div>

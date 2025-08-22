@@ -10,13 +10,13 @@ const HomepageImmersiveMusicalShowcase = () => {
   return (
     <>
       <Helmet>
-        <title>Muheet Bharti - Grammy Nominated Sitarist | Senia Gharana Legacy</title>
+        <title>Muheet Bharti | Senia Gharana Legacy</title>
         <meta 
           name="description" 
           content="Experience the Grammy-nominated artistry of Muheet Bharti, bridging 18 generations of Senia Gharana tradition with contemporary global music. Discover legendary collaborations and immersive musical experiences." 
         />
         <meta name="keywords" content="Muheet Bharti, Grammy nominated, sitar, Senia Gharana, Indian classical music, world music, Arijit Singh collaboration" />
-        <meta property="og:title" content="Muheet Bharti - Grammy Nominated Sitarist | Senia Gharana Legacy" />
+        <meta property="og:title" content="Muheet Bharti | Senia Gharana Legacy" />
         <meta property="og:description" content="Where centuries of tradition meet Grammy-nominated innovation. Experience the musical journey of Muheet Bharti." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="/homepage-immersive-musical-showcase" />
@@ -51,7 +51,7 @@ const HomepageImmersiveMusicalShowcase = () => {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold">Muheet Bharti</h3>
-                    <p className="text-accent text-sm">Grammy Nominated Sitarist</p>
+                    <p className="text-accent text-sm">Grammy Nominated Singer</p>
                   </div>
                 </div>
                 <p className="text-background/80 max-w-md">
@@ -83,6 +83,9 @@ const HomepageImmersiveMusicalShowcase = () => {
                   </a>
                   <a href="https://www.instagram.com/muheetbharti/" target='_blank' className="flex items-center space-x-2 text-background/80 hover:text-accent musical-transition">
                     <span>Instagram</span>
+                  </a>
+                  <a href="https://www.instagram.com/muheetbharti/" target='_blank' className="flex items-center space-x-2 text-background/80 hover:text-accent musical-transition">
+                    <span>muheetbhart@gmail.com</span>
                   </a>
                 </div>
               </div>
