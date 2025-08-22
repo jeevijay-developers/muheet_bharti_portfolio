@@ -3,6 +3,8 @@ import { Helmet } from 'react-helmet';
 import Header from '../../components/ui/Header';
 import HeroSection from './components/HeroSection';
 import RotatingShowcase from './components/RotatingShowcase';
+import Songs from './components/Songs';
+import AchievementsSection from './components/AchievementsSection';
 import FloatingAudioPlayer from './components/FloatingAudioPlayer';
 import SocialProofSection from './components/SocialProofSection';
 
@@ -31,6 +33,12 @@ const HomepageImmersiveMusicalShowcase = () => {
           
           {/* Rotating Showcase - Heritage, Grammy, Collaborations */}
           <RotatingShowcase />
+
+          {/* Musical Compositions Section */}
+          <Songs />
+
+          {/* Featured Achievements Section */}
+          <AchievementsSection />
           
           {/* Social Proof and Industry Recognition */}
           {/* <SocialProofSection /> */}

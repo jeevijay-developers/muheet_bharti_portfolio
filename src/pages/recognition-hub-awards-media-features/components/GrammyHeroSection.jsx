@@ -26,8 +26,8 @@ const GrammyHeroSection = () => {
                 <span className="block text-primary">Excellence Acknowledged</span>
               </h1>
               <p className="text-muted-foreground text-lg lg:text-xl leading-relaxed max-w-2xl">
-                Honored with a Grammy nomination for outstanding contribution to classical fusion music, 
-                representing the pinnacle of artistic achievement and industry recognition.
+                Grammy nominated vocalist for the album "Shuruaat" which won Best Global Music Album 
+                at the 65th Grammy Awards in 2022, representing exceptional vocal artistry on the world's most prestigious musical stage.
               </p>
             </div>
 
@@ -39,8 +39,8 @@ const GrammyHeroSection = () => {
                     <Icon name="Music" size={20} className="text-primary mr-2" />
                     <h3 className="font-semibold text-foreground">Category</h3>
                   </div>
-                  <p className="text-muted-foreground">Best World Music Album</p>
-                  <p className="text-sm text-accent font-medium mt-1">"Senia Resonance"</p>
+                  <p className="text-muted-foreground">Best Global Music Album</p>
+                  <p className="text-sm text-accent font-medium mt-1">"Shuruaat" - Vocalist</p>
                 </div>
 
                 <div className="bg-card p-6 rounded-lg border border-border shadow-contemplative">
@@ -49,16 +49,16 @@ const GrammyHeroSection = () => {
                     <h3 className="font-semibold text-foreground">Year</h3>
                   </div>
                   <p className="text-muted-foreground">65th Annual Grammy Awards</p>
-                  <p className="text-sm text-accent font-medium mt-1">2023 Nomination</p>
+                  <p className="text-sm text-accent font-medium mt-1">2022 Winner</p>
                 </div>
               </div>
 
               {/* Quote */}
               <blockquote className="bg-surface/50 p-6 rounded-lg border-l-4 border-primary">
                 <p className="text-foreground italic text-lg leading-relaxed mb-4">
-                  "This nomination represents not just personal achievement, but recognition of our 
-                  ancestral musical heritage on the world's most prestigious stage. It's a bridge 
-                  between centuries of tradition and contemporary global appreciation."
+                  "Being part of the Grammy-winning album 'Shuruaat' as a vocalist represents the 
+                  culmination of years of dedication to my craft. This achievement validates our 
+                  ancestral musical heritage and its place on the world's most prestigious stage."
                 </p>
                 <cite className="text-muted-foreground font-medium">— Muheet Bharti</cite>
               </blockquote>
@@ -91,23 +91,7 @@ const GrammyHeroSection = () => {
           <div className="relative">
             <div className="relative bg-card rounded-2xl p-8 shadow-grandeur">
               {/* Grammy Certificate Mockup */}
-              <div className="aspect-[4/3] bg-gradient-to-br from-accent/20 to-primary/20 rounded-lg border-2 border-accent/30 p-6 flex flex-col justify-center items-center text-center">
-                <div className="w-16 h-16 bg-accent rounded-full flex items-center justify-center grammy-glow mb-4">
-                  <Icon name="Award" size={32} color="white" />
-                </div>
-                <h3 className="text-headline text-xl font-bold text-foreground mb-2">
-                  Grammy Nomination Certificate
-                </h3>
-                <p className="text-muted-foreground text-sm mb-4">
-                  The Recording Academy
-                </p>
-                <div className="space-y-2 text-sm">
-                  <p className="font-semibold text-primary">Muheet Bharti</p>
-                  <p className="text-muted-foreground">Best World Music Album</p>
-                  <p className="text-accent font-medium">"Senia Resonance"</p>
-                  <p className="text-muted-foreground">65th Annual Grammy Awards</p>
-                </div>
-              </div>
+              <img src='public/assets/images/grammy-certificate-new.jpg' className='w-full h-3/6' />
 
               {/* Floating Elements */}
               <div className="absolute -top-4 -right-4 w-12 h-12 bg-accent rounded-full flex items-center justify-center grammy-glow">

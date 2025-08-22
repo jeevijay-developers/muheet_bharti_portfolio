@@ -18,12 +18,12 @@ const AchievementTimeline = () => {
     {
       id: 1,
       category: 'industry',
-      year: '2023',
-      title: 'Grammy Nomination',
-      subtitle: 'Best World Music Album - "Senia Resonance"',
-      description: `Nominated for the prestigious Grammy Award, recognizing exceptional artistry in world music. 
-      The album "Senia Resonance" represents a masterful fusion of 500-year-old Senia Gharana traditions 
-      with contemporary production techniques.`,
+      year: '2022',
+      title: 'Grammy nomination',
+      subtitle: 'Best Global Music Album - "Shuruaat" (Vocalist)',
+      description: `Nominee of the prestigious Grammy Award for Best Global Music Album at the 65th Grammy Awards (2022). 
+      The album "Shuruaat" represents a masterful collaboration where traditional Indian classical vocal artistry 
+      meets contemporary production techniques.`,
       significance: 'Highest honor in the music industry',
       image: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&h=300&fit=crop',
       icon: 'Award',
@@ -38,7 +38,7 @@ const AchievementTimeline = () => {
       description: `Honored by the Indian Recording Arts Academy for outstanding contribution to classical fusion music. 
       This recognition celebrates the innovative approach to preserving and evolving traditional Indian classical music.`,
       significance: 'Premier recognition in Indian music industry',
-      image: '/assets/banners/irraawards.jpg',
+      image: '/assets/images/irra.jpg',
       icon: 'Trophy',
       color: 'primary'
     },
@@ -71,20 +71,6 @@ const AchievementTimeline = () => {
       color: 'accent'
     },
     {
-      id: 5,
-      category: 'cultural',
-      year: '2023',
-      title: 'UNESCO Cultural Ambassador',
-      subtitle: 'Indian Classical Music Preservation',
-      description: `Appointed as UNESCO Cultural Ambassador for Indian Classical Music Preservation, 
-      recognizing efforts in documenting and teaching the Senia Gharana tradition to future generations 
-      and promoting cultural understanding through music.`,
-      significance: 'International cultural recognition',
-      image: '/assets/images/ancestoral_image.jpg',
-      icon: 'Globe',
-      color: 'primary'
-    },
-    {
       id: 6,
       category: 'media',
       year: '2022',
@@ -94,7 +80,7 @@ const AchievementTimeline = () => {
       the evolution of classical Indian music and its adaptation for global audiences while maintaining 
       traditional authenticity.`,
       significance: 'International media coverage',
-      image: '/assets/banners/awards.jpg',
+      image: '/assets/banners/bbc.jpg',
       icon: 'Radio',
       color: 'secondary'
     },

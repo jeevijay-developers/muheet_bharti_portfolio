@@ -71,7 +71,7 @@ const SocialProofSection = () => {
   const mediaFeatures = [
     {
       outlet: "Nominated awards",
-      headline: "The Grammy-Nominated Sitarist Bridging Centuries",
+      headline: "The Grammy-Nominated singer Bridging Centuries",
       date: "March 2024",
       image: "/assets/banners/awards.jpg"
     },

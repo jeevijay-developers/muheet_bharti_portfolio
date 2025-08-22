@@ -8,7 +8,6 @@ const Web3ContactForm = () => {
     email: '',
     subject: '',
     message: '',
-    walletAddress: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -25,44 +24,61 @@ const Web3ContactForm = () => {
     setIsSubmitting(true);
 
     try {
-      const apiKey = import.meta.env.VITE_WEB3_API_KEY;
+      const accessKey = import.meta.env.VITE_WEB3_FORMS_ACCESS_KEY;
       
-      // Simulate API call with Web3 integration
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${apiKey}`
-        },
-        body: JSON.stringify({
-          ...formData,
-          timestamp: new Date().toISOString(),
-          source: 'recognition-hub'
-        })
+      // Validate access key format (UUID)
+      const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
+      if (!accessKey || !uuidRegex.test(accessKey)) {
+        console.error('Invalid or missing Web3Forms access key');
+        toast.error('Configuration error. Please contact directly via email.', {
+          duration: 4000,
+          icon: '⚠️',
+        });
+        setIsSubmitting(false);
+        return;
+      }
+      
+      // Create FormData for Web3Forms API
+      const formDataToSend = new FormData();
+      formDataToSend.append("access_key", accessKey);
+      formDataToSend.append("name", formData.name);
+      formDataToSend.append("email", formData.email);
+      formDataToSend.append("subject", formData.subject);
+      formDataToSend.append("message", formData.message);
+      formDataToSend.append("from_name", "Muheet Bharti Portfolio");
+      formDataToSend.append("source", "recognition-hub");
+      formDataToSend.append("timestamp", new Date().toISOString());
+
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formDataToSend
       });
 
-      if (response.ok) {
+      const data = await response.json();
+
+      if (data.success) {
         toast.success('Message sent successfully! I\'ll get back to you soon.', {
           duration: 4000,
           icon: '🎵',
         });
+        
         setFormData({
           name: '',
           email: '',
           subject: '',
           message: '',
-          walletAddress: ''
         });
       } else {
-        toast.error('Failed to send message. Please try again or contact directly.', {
-          duration: 3000,
+        console.log("Web3Forms Error", data);
+        toast.error(data.message || 'Failed to send message. Please try again.', {
+          duration: 4000,
           icon: '❌',
         });
       }
     } catch (error) {
       console.error('Form submission error:', error);
       toast.error('Failed to send message. Please try again or contact directly.', {
-        duration: 3000,
+        duration: 4000,
         icon: '❌',
       });
     } finally {
@@ -70,36 +86,6 @@ const Web3ContactForm = () => {
     }
   };
 
-  const connectWallet = async () => {
-    try {
-      if (typeof window.ethereum !== 'undefined') {
-        const accounts = await window.ethereum.request({
-          method: 'eth_requestAccounts'
-        });
-        if (accounts.length > 0) {
-          setFormData(prev => ({
-            ...prev,
-            walletAddress: accounts[0]
-          }));
-          toast.success('Wallet connected successfully!', {
-            duration: 3000,
-            icon: '🔗',
-          });
-        }
-      } else {
-        toast.error('Please install MetaMask or another Web3 wallet to connect.', {
-          duration: 4000,
-          icon: '⚠️',
-        });
-      }
-    } catch (error) {
-      console.error('Wallet connection error:', error);
-      toast.error('Failed to connect wallet. Please try again.', {
-        duration: 4000,
-        icon: '❌',
-      });
-    }
-  };
 
   return (
     <section className="py-12 md:py-16 lg:py-24 bg-gradient-to-br from-surface via-background to-surface">

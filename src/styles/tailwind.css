@@ -256,4 +256,14 @@
     0% { stroke-dashoffset: 0; }
     100% { stroke-dashoffset: 20; }
   }
+
+  /* Hide Scrollbar Utility */
+  .scrollbar-hide {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;  /* Safari and Chrome */
+  }
 }

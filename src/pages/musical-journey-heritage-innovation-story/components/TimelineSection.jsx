@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Icon from '../../../components/AppIcon';
 import Image from '../../../components/AppImage';
-import Button from '../../../components/ui/Button';
 
 const TimelineSection = () => {
   const [activeEra, setActiveEra] = useState('roots');
@@ -10,27 +9,24 @@ const TimelineSection = () => {
   const timelineData = [
     {
       id: 'roots',
-      title: 'Ancestral Roots',
+      title: 'Ancestral Roots & Ustad Jamal Khan',
       subtitle: '1500s - 1900s',
-      description: `The Senia Gharana tradition begins with Mian Tansen, one of the nine jewels of Emperor Akbar's court. Our family lineage carries forward this 500-year legacy of classical mastery, where each generation has preserved and enriched the sacred ragas that form the foundation of Hindustani classical music.`,
-      image: '/assets/images/ancestoral_image.jpg',audioSample: 'Raga Yaman - Traditional Alap',
+      description: `The Senia Gharana tradition begins with Mian Tansen, one of the nine jewels of Emperor Akbar's court. Our family lineage carries forward this 500-year legacy through legendary figures like my great grandfather, Ustad Jamal Khan of Maihar Gharana. A revered master who trained the legendary ghazal king Jagjit Singh in all prominent styles of Hindustani Classical vocal tradition including Khayal, Dhrupad, and Thumri, Ustad Jamal Khan's teachings shaped the voice that would later revolutionize ghazal music.`,
+      image: '/assets/images/jamal4-3.jpg',
+      audioSample: 'Raga Yaman - Traditional Alap',
       highlights: [
         'Mian Tansen\'s court legacy',
-        '18 generations of musical mastery',
-        'Preservation of ancient ragas',
-        'Guru-shishya parampara tradition'
+        'Ustad Jamal Khan - Guru to Jagjit Singh',
+        'Maihar Gharana classical tradition',
+        'Master of Khayal, Dhrupad & Thumri',
+        'Shaped the legendary ghazal revolution'
       ],
-      culturalTerms: [
-        { term: 'Gharana', definition: 'A system of social organization linking musicians or dancers by lineage or apprenticeship' },
-        { term: 'Raga', definition: 'A melodic framework for improvisation and composition in Indian classical music' },
-        { term: 'Alap', definition: 'The opening section of a typical North Indian classical performance' }
-      ]
     },
     {
       id: 'learning',
       title: 'Foundation Years',
       subtitle: '1990s - 2010s',
-      description: `Growing up immersed in the sounds of tabla, sitar, and harmonium, I began my formal training at age 5 under the guidance of my grandfather, Ustad Muheet Khan. The rigorous discipline of classical training shaped not just my technique, but my understanding of music as a spiritual practice and cultural responsibility.`,
+      description: `Growing up immersed in the sounds of tabla, sitar, and harmonium, I began my formal training at age 5 under the guidance of my grandfather, carrying forward the legacy of Ustad Jamal Khan. The rigorous discipline of classical training shaped not just my technique, but my understanding of music as a spiritual practice and cultural responsibility, following the same guru-shishya tradition that produced legends like Jagjit Singh.`,
       image: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop',
       audioSample: 'Early Raga Studies - Bhairav',
       highlights: [
@@ -41,8 +37,10 @@ const TimelineSection = () => {
       ],
       culturalTerms: [
         { term: 'Ustad', definition: 'A master or teacher, especially in music or other arts' },
-        { term: 'Tabla', definition: 'A pair of twin hand drums from the Indian subcontinent' },
-        { term: 'Sitar', definition: 'A plucked stringed instrument, originating from the Indian subcontinent' }
+        { term: 'Maihar Gharana', definition: 'A musical lineage founded by Allauddin Khan, known for its rigorous training and versatility' },
+        { term: 'Khayal', definition: 'The most prominent form of North Indian classical vocal music, emphasizing improvisation' },
+        { term: 'Dhrupad', definition: 'The oldest surviving form of Hindustani classical music, known for its meditative quality' },
+        { term: 'Thumri', definition: 'A semi-classical vocal form expressing romantic and devotional themes' }
       ]
     },
     {
@@ -67,9 +65,9 @@ const TimelineSection = () => {
       id: 'evolution',
       title: 'Contemporary Evolution',
       subtitle: '2015 - Present',
-      description: `The Grammy nomination for "Resonance of Heritage" marked a pivotal moment where traditional Indian classical music gained global recognition through contemporary production. Collaborations with artists like Arijit Singh and Shankar Mahadevan have opened new pathways for cultural exchange through music.`,
+      description: `The Grammy win for the album "Shuruaat" as a vocalist marked a pivotal moment where traditional Indian classical music gained global recognition through contemporary production. This achievement in the Best Global Music Album category at the 65th Grammy Awards in 2022 opened new pathways for cultural exchange through music.`,
       image: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop',
-      audioSample: 'Grammy Nominated - Resonance of Heritage',
+      audioSample: 'Grammy Winner - Shuruaat Album',
       highlights: [
         'Grammy nomination achievement',
         'Collaborations with music legends',
@@ -210,7 +208,7 @@ const TimelineSection = () => {
             </div>
 
             {/* Cultural Terms */}
-            <div>
+            {/* <div>
               <h4 className="text-xl font-semibold text-foreground mb-4">
                 Cultural Glossary
               </h4>
@@ -227,7 +225,7 @@ const TimelineSection = () => {
                   </div>
                 ))}
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
 

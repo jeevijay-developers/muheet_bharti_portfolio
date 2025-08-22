@@ -12,33 +12,34 @@ const Songs = () => {
   };
 
   const songs = [
-    {
-      id: 1,
-      title: "Agar Main Kahoo",
-      genre: "Classical Fusion",
-      duration: "3:27",
-      image: "/assets/thumbnail/agar-main-kahoo.webp",
-      description: "A soulful rendition blending traditional ragas with contemporary arrangements",
-      link: "https://open.spotify.com/album/7rRTQRMtHousD8fdYwUPB7?nd=1&dlsi=c1dde8ef87ce4eb4"
-    },
-    {
-      id: 2,
-      title: "Dil Lagana",
-      genre: "Romantic Classical",
-      duration: "2:26",
-      image: "/assets/thumbnail/dil-lagana.webp",
-      description: "An emotional journey through the depths of love and longing",
-      link: "https://open.spotify.com/album/1xgXSQFY281rp9OXwhj91S?nd=1&dlsi=2cd884f7f3884025"
-    },
-    {
-      id: 3,
-      title: "Jitthe Pyaar",
-      genre: "Folk Fusion",
-      duration: "3:30",
-      image: "/assets/thumbnail/jitthe-pyaar.webp",
-      description: "Traditional Punjabi folk meets classical Indian music",
-      link: "https://open.spotify.com/album/3eAvDmzwqPvcpqZJcLauLl?nd=1&dlsi=72c903a7f33740a9"
-    },
+            {
+            id: 1,
+            title: "Jitthe Pyaar",
+            genre: "Folk Fusion",
+            duration: "3:30",
+            image: "/assets/thumbnail/jitthe-pyaar.webp",
+            description: "Traditional Punjabi folk meets classical Indian music",
+            link: "https://open.spotify.com/album/3eAvDmzwqPvcpqZJcLauLl?nd=1&dlsi=72c903a7f33740a9"
+        },
+      {
+          id: 2,
+          title: "Dil Lagana",
+          genre: "Romantic Classical",
+          duration: "2:26",
+          image: "/assets/thumbnail/dil-lagana.webp",
+          description: "An emotional journey through the depths of love and longing",
+          link: "https://open.spotify.com/album/1xgXSQFY281rp9OXwhj91S?nd=1&dlsi=2cd884f7f3884025"
+        },
+
+        {
+          id: 3,
+          title: "Shaam Se Aaj",
+          genre: "Evening Raga",
+          duration: "4:38",
+          image: "/assets/thumbnail/sham-se-aaj.webp",
+          description: "A beautiful evening raga composition capturing twilight emotions. Featured with appreciation quotes from Arijit Singh on social media.",
+          link: "https://open.spotify.com/album/4SuzrXLwbsRxRSZvp2Dr5g?nd=1&dlsi=56c424883c734173"
+        },
     {
       id: 4,
       title: "Keda Jaadu",
@@ -50,12 +51,12 @@ const Songs = () => {
     },
     {
       id: 5,
-      title: "Sham Se Aaj",
-      genre: "Evening Raga",
-      duration: "4:38",
-      image: "/assets/thumbnail/sham-se-aaj.webp",
-      description: "A beautiful evening raga composition capturing twilight emotions",
-      link: "https://open.spotify.com/album/4SuzrXLwbsRxRSZvp2Dr5g?nd=1&dlsi=56c424883c734173"
+      title: "Agar Main Kahoo",
+      genre: "Classical Fusion",
+      duration: "3:27",
+      image: "/assets/thumbnail/agar-main-kahoo.webp",
+      description: "A soulful rendition blending traditional ragas with contemporary arrangements",
+      link: "https://open.spotify.com/album/7rRTQRMtHousD8fdYwUPB7?nd=1&dlsi=c1dde8ef87ce4eb4"
     },
     {
       id: 6,
@@ -96,7 +97,7 @@ const Songs = () => {
               <Image
                 src={songs[0].image}
                 alt={songs[0].title}
-                className="w-full h-full object-cover group-hover:scale-110 musical-transition"
+                className="w-full h-full object-cover object-top group-hover:scale-110 musical-transition"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent">
                 <div className="absolute bottom-4 left-4 text-white">
@@ -150,11 +151,17 @@ const Songs = () => {
                 alt={songs[2].title}
                 className="w-full h-full object-cover group-hover:scale-110 musical-transition"
               />
+              {/* Special Badge for Arijit Singh Recognition */}
+              <div className="absolute top-3 right-3 bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-2 py-1 rounded-full text-xs font-bold flex items-center gap-1 shadow-lg">
+                <Icon name="Star" size={12} />
+                Share by Arijit Singh ✨
+              </div>
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent">
                 <div className="absolute bottom-4 left-4 text-white">
                   <h3 className="font-bold text-lg mb-1">{songs[2].title}</h3>
                   <p className="text-sm text-white/80">{songs[2].genre}</p>
                   <p className="text-xs text-white/60">{songs[2].duration}</p>
+                  <p className="text-xs text-yellow-300 mt-1 font-medium">🎵 Featured on social media</p>
                 </div>
               </div>
               {hoveredSong === 3 && (
@@ -288,10 +295,16 @@ const Songs = () => {
                 alt={songs[2].title}
                 className="w-full h-full object-cover group-hover:scale-110 musical-transition"
               />
+              {/* Special Badge for Arijit Singh Recognition */}
+              <div className="absolute top-2 right-2 bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-2 py-1 rounded-full text-xs font-bold flex items-center gap-1 shadow-lg">
+                <Icon name="Star" size={10} />
+                Shared by Arijit Singh ✨
+              </div>
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent">
                 <div className="absolute bottom-4 left-4 text-white">
                   <h3 className="font-bold text-lg mb-1">{songs[2].title}</h3>
                   <p className="text-sm text-white/80">{songs[2].genre}</p>
+                  <p className="text-xs text-yellow-300 font-medium">🎵 Social media featured</p>
                 </div>
               </div>
             </div>
@@ -299,7 +312,7 @@ const Songs = () => {
 
           {/* Mobile Grid */}
           <div className="grid md:hidden grid-cols-2 gap-4">
-            {songs.slice(0, 4).map((song, index) => (
+            {songs.map((song, index) => (
               <div 
                 key={song.id}
                 className="aspect-square relative group cursor-pointer overflow-hidden rounded-xl"
@@ -316,6 +329,15 @@ const Songs = () => {
                   <div className="absolute bottom-3 left-3 text-white">
                     <h3 className="font-bold text-sm mb-1">{song.title}</h3>
                     <p className="text-xs text-white/80">{song.genre}</p>
+                    {song.title === "Shaam Se Aaj" && (
+                      <>
+                        <p className="text-xs text-yellow-300 font-medium mt-0.5">🎵 Featured</p>
+                        <div className="mt-1 bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-1.5 py-0.5 rounded-full text-xs font-bold flex items-center gap-0.5 shadow-lg w-fit">
+                          <Icon name="Star" size={8} />
+                          Shared by Arijit Singh ✨
+                        </div>
+                      </>
+                    )}
                   </div>
                 </div>
                 {hoveredSong === song.id && (

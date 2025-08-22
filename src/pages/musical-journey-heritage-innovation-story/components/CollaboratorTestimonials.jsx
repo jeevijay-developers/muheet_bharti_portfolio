@@ -15,7 +15,7 @@ const CollaboratorTestimonials = () => {
       image:
         "https://scontent.fjdh1-2.fna.fbcdn.net/v/t39.30808-6/310440311_460161376147334_5922898089465705691_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=O3VSlM4fF9IQ7kNvwHgPeEh&_nc_oc=AdmIKmOwjheMfOb8WUfTsSBNz8hdijq37CoiHNEt5Plm_aC0hZgxdwpR-01sx62mgQimQCRVCDuruvJ6rDjQbWVw&_nc_zt=23&_nc_ht=scontent.fjdh1-2.fna&_nc_gid=RG7k-M8E3gVtxQaDsW55Ew&oh=00_AfWgJZNfJnER-sXAOFMeH6dMl67mmBu1lB9oNjUdGxTZHA&oe=68ACEDF7",
       quote: `Muheet's ability to seamlessly blend classical Indian ragas with contemporary production is extraordinary. His Grammy nomination is well-deserved recognition of his unique artistry that bridges generations of musical tradition.`,
-      project: "Resonance of Heritage Album",
+      project: "Shuruaat Album",
       videoThumbnail:
         "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600&h=400&fit=crop",
       collaboration: "Lead Vocalist & Co-Producer",

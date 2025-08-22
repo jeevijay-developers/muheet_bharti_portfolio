@@ -105,7 +105,7 @@ const HeroSection = () => {
                 </h1>
                 
                 <p className="text-body text-muted-foreground max-w-2xl leading-relaxed">
-                  Grammy-nominated sitarist bridging ancient Senia Gharana traditions with contemporary global music. 
+                  Grammy-nominated singer bridging ancient Senia Gharana traditions with contemporary global music. 
                   Experience the convergence of 500-year-old wisdom and modern artistry.
                 </p>
               </div>
@@ -254,7 +254,7 @@ const HeroSection = () => {
               </div>
 
               {/* Quick Links */}
-              <div className="grid grid-cols-2 gap-4">
+              {/* <div className="grid grid-cols-2 gap-4">
                 <Link 
                   to="/journey"
                   className="group p-4 bg-card/50 backdrop-blur-sm rounded-lg border border-border hover:border-primary/50 musical-transition"
@@ -280,20 +280,20 @@ const HeroSection = () => {
                     </div>
                   </div>
                 </Link>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
       </div>
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
+      {/* <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
         <div className="flex flex-col items-center space-y-2 text-muted-foreground">
           <p className="text-sm">Discover More</p>
           <div className="w-6 h-10 border-2 border-muted-foreground rounded-full flex justify-center">
             <div className="w-1 h-3 bg-muted-foreground rounded-full mt-2 animate-bounce"></div>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

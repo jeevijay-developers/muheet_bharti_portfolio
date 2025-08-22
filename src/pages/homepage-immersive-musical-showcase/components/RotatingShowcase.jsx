@@ -54,6 +54,96 @@ const RotatingShowcase = () => {
         { label: 'Notable', value: 'Chak De! India' },
         { label: 'Years Active', value: '1993–present' }
       ]
+    },
+    {
+      id: 'sonu-nigam',
+      title: 'Sonu Nigam — The Voice of Bollywood',
+      subtitle: 'Legendary playback singer with unmatched versatility',
+      description: `One of India's most celebrated playback singers with over 2000 songs across languages. Known for hits like "Kal Ho Na Ho" and "Abhi Mujh Mein Kahin". Padma Shri recipient and global icon.`,
+      image: '/assets/celebs/sonu-nigam.jpg',
+      icon: 'Mic',
+      color: 'primary',
+      link: '/collaborations',
+      stats: [
+        { label: 'Awards', value: 'National Film Award' },
+        { label: 'Songs', value: '2000+' },
+        { label: 'Years Active', value: '1990–present' }
+      ]
+    },
+    {
+      id: 'shreya-ghoshal',
+      title: 'Shreya Ghoshal — Melody Queen',
+      subtitle: 'Four-time National Award winning playback singer',
+      description: `India's most awarded female playback singer with 4 National Film Awards and numerous regional accolades. Known for her versatility across languages and genres, from classical to contemporary.`,
+      image: '/assets/celebs/shreya.jpg',
+      icon: 'Heart',
+      color: 'accent',
+      link: '/collaborations',
+      stats: [
+        { label: 'National Awards', value: '4' },
+        { label: 'Languages', value: '20+' },
+        { label: 'Years Active', value: '1999–present' }
+      ]
+    },
+    {
+      id: 'armaan-malik',
+      title: 'Armaan Malik — Next-Gen Sensation',
+      subtitle: 'Young playback singer and international artist',
+      description: `Rising star of Indian music with hits like "Bol Do Na Zara" and "Chale Aana". Successfully transitioning to international markets with English singles and collaborations.`,
+      image: '/assets/celebs/armaan-malik.jpg',
+      icon: 'Star',
+      color: 'secondary',
+      link: '/collaborations',
+      stats: [
+        { label: 'Debut', value: '2014' },
+        { label: 'Genre', value: 'Pop/Bollywood' },
+        { label: 'Global Reach', value: 'International' }
+      ]
+    },
+    {
+      id: 'shaan',
+      title: 'Shaan — The Golden Voice',
+      subtitle: 'Versatile singer, composer and television personality',
+      description: `Renowned for his melodious voice in songs like "Tanha Dil" and "Chand Sifarish". Multi-talented artist excelling as singer, composer, and TV host with a career spanning decades.`,
+      image: '/assets/celebs/shaan.jpg',
+      icon: 'Music',
+      color: 'primary',
+      link: '/collaborations',
+      stats: [
+        { label: 'Role', value: 'Singer/Composer' },
+        { label: 'Notable', value: 'Chand Sifarish' },
+        { label: 'Years Active', value: '1999–present' }
+      ]
+    },
+    {
+      id: 'jaani',
+      title: 'Jaani — Punjabi Lyrical Genius',
+      subtitle: 'Acclaimed lyricist and music producer',
+      description: `Masterful lyricist behind superhits like "Pachtaoge", "Filhaal", and "Titliaan". Known for emotional depth and poetic brilliance in Punjabi and Hindi music.`,
+      image: '/assets/celebs/jaani.jpg',
+      icon: 'PenTool',
+      color: 'accent',
+      link: '/collaborations',
+      stats: [
+        { label: 'Role', value: 'Lyricist/Producer' },
+        { label: 'Hit Songs', value: 'Filhaal Series' },
+        { label: 'Specialty', value: 'Emotional Lyrics' }
+      ]
+    },
+    {
+      id: 'jassi-gill',
+      title: 'Jassi Gill — Punjabi Heartthrob',
+      subtitle: 'Actor-singer with massive youth following',
+      description: `Popular Punjabi singer and Bollywood actor known for hits like "Lancer", "Nikle Currant", and "Guitar Sikhda". Successfully balancing music and acting careers.`,
+      image: '/assets/celebs/jassi.jpg',
+      icon: 'Film',
+      color: 'secondary',
+      link: '/collaborations',
+      stats: [
+        { label: 'Dual Career', value: 'Singer/Actor' },
+        { label: 'Popular Song', value: 'Nikle Currant' },
+        { label: 'Industry', value: 'Punjabi/Bollywood' }
+      ]
     }
   ];
 
@@ -93,7 +183,7 @@ const RotatingShowcase = () => {
             Musical Excellence
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto px-2">
-            Discover the three pillars that define Muheet Bharti's extraordinary musical journey
+            Discover the pillars that define Muheet Bharti's extraordinary musical journey
           </p>
         </div>
 
@@ -140,7 +230,7 @@ const RotatingShowcase = () => {
             </div> */}
 
             {/* CTA Button */}
-            <div className="pt-4">
+            {/* <div className="pt-4">
               <Link to={currentSection?.link}>
                 <Button
                   variant="outline"
@@ -154,7 +244,7 @@ const RotatingShowcase = () => {
                   <span className="sm:hidden">Explore More</span>
                 </Button>
               </Link>
-            </div>
+            </div> */}
           </div>
 
           {/* Visual Side */}
@@ -200,7 +290,7 @@ const RotatingShowcase = () => {
         </div>
 
         {/* Navigation Dots */}
-        <div className="flex justify-center space-x-2 sm:space-x-4 overflow-x-auto pb-2">
+        <div className="flex justify-center space-x-2 sm:space-x-4 overflow-x-auto pb-2 scrollbar-hide">
           <div className="flex space-x-2 sm:space-x-4 min-w-max px-4 sm:px-0">
             {showcaseSections?.map((section, index) => (
               <button
@@ -238,7 +328,6 @@ const RotatingShowcase = () => {
           </div>
         </div> */}
       </div>
-      <Songs />
     </section>
   );
 };
