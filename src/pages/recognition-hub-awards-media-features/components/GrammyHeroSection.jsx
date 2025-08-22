@@ -21,7 +21,7 @@ const GrammyHeroSection = () => {
 
             {/* Main Heading */}
             <div className="space-y-4">
-              <h1 className="text-headline text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground leading-tight">
+              <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground leading-tight">
                 Grammy Recognition
                 <span className="block text-primary">Excellence Acknowledged</span>
               </h1>
