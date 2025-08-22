@@ -15,7 +15,7 @@ const HeroSection = () => {
       title: "Raga Yaman - Grammy Nominated Performance",
       artist: "Muheet Bharti",
       duration: "7:42",
-      image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop"
+      image: "/assets/banners/muheet.webp"
     },
     {
       id: 2,
@@ -63,7 +63,7 @@ const HeroSection = () => {
       {/* Background Video/Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=1920&h=1080&fit=crop"
+          src="/assets/banners/muheet.jpg"
           alt="Muheet Bharti performing with sitar"
           className="w-full h-full object-cover opacity-20"
         />
