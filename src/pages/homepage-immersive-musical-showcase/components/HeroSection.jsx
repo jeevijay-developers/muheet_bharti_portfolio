@@ -123,7 +123,7 @@ const HeroSection = () => {
                   Experience the Music
                 </Button>
                 
-                <Link to="/collaborations-industry-relationships-showcase">
+                <Link to="/collaborations">
                   <Button
                     variant="outline"
                     size="lg"
@@ -257,7 +257,7 @@ const HeroSection = () => {
               {/* Quick Links */}
               <div className="grid grid-cols-2 gap-4">
                 <Link 
-                  to="/musical-journey-heritage-innovation-story"
+                  to="/journey"
                   className="group p-4 bg-card/50 backdrop-blur-sm rounded-lg border border-border hover:border-primary/50 musical-transition"
                 >
                   <div className="flex items-center space-x-3">
@@ -270,7 +270,7 @@ const HeroSection = () => {
                 </Link>
 
                 <Link 
-                  to="/live-experiences-performance-gallery"
+                  to="/live-performances"
                   className="group p-4 bg-card/50 backdrop-blur-sm rounded-lg border border-border hover:border-primary/50 musical-transition"
                 >
                   <div className="flex items-center space-x-3">

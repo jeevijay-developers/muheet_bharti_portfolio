@@ -287,7 +287,7 @@ const SocialProofSection = () => {
               >
                 Listen on Spotify
               </Button>
-              <Link to="/collaborations-industry-relationships-showcase">
+              <Link to="/collaborations">
                 <Button
                   variant="outline"
                   size="lg"

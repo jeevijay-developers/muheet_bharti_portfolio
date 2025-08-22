@@ -11,27 +11,27 @@ const Header = () => {
   const navigationItems = [
     { 
       name: 'Home', 
-      path: '/homepage-immersive-musical-showcase',
+      path: '/',
       icon: 'Home'
     },
     { 
       name: 'Journey', 
-      path: '/musical-journey-heritage-innovation-story',
+      path: '/journey',
       icon: 'MapPin'
     },
     { 
       name: 'Collaborations', 
-      path: '/collaborations-industry-relationships-showcase',
+      path: '/collaborations',
       icon: 'Users'
     },
     { 
       name: 'Live', 
-      path: '/live-experiences-performance-gallery',
+      path: '/live-performances',
       icon: 'Music'
     },
     { 
       name: 'Studio', 
-      path: '/studio-insights-creative-process-revealed',
+      path: '/studio-insights',
       icon: 'Mic'
     }
   ];
@@ -39,7 +39,7 @@ const Header = () => {
   const moreItems = [
     { 
       name: 'Recognition', 
-      path: '/recognition-hub-awards-media-features',
+      path: '/recognition',
       icon: 'Award'
     }
   ];

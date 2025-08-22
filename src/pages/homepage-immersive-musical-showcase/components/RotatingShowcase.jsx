@@ -17,7 +17,7 @@ const RotatingShowcase = () => {
       image: '/assets/celebs/gurdas.jpg',
       icon: 'Crown',
       color: 'primary',
-      link: '/collaborations-industry-relationships-showcase',
+      link: '/collaborations',
       stats: [
         { label: 'Genre', value: 'Punjabi folk/Bhangra' },
         { label: 'Years Active', value: '1979–present' },
@@ -32,7 +32,7 @@ const RotatingShowcase = () => {
       image: '/assets/celebs/siddhu.jpg',
       icon: 'Award',
       color: 'accent',
-      link: '/recognition-hub-awards-media-features',
+      link: '/recognition',
       stats: [
         { label: 'Genre', value: 'Hip hop/Desi rap' },
         { label: 'Milestone', value: 'Wireless Festival' },
@@ -47,7 +47,7 @@ const RotatingShowcase = () => {
       image: '/assets/celebs/salim.jpg',
       icon: 'Users',
       color: 'secondary',
-      link: '/collaborations-industry-relationships-showcase',
+      link: '/collaborations',
       stats: [
         { label: 'Role', value: 'Composers/Producers' },
         { label: 'Notable', value: 'Chak De! India' },

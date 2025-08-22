@@ -64,10 +64,10 @@ const HomepageImmersiveMusicalShowcase = () => {
               <div>
                 <h4 className="font-semibold mb-4">Explore</h4>
                 <ul className="space-y-2 text-background/80">
-                  <li><a href="/musical-journey-heritage-innovation-story" className="hover:text-accent musical-transition">Musical Journey</a></li>
-                  <li><a href="/collaborations-industry-relationships-showcase" className="hover:text-accent musical-transition">Collaborations</a></li>
-                  <li><a href="/live-experiences-performance-gallery" className="hover:text-accent musical-transition">Live Experiences</a></li>
-                  <li><a href="/recognition-hub-awards-media-features" className="hover:text-accent musical-transition">Recognition</a></li>
+                  <li><a href="/journey" className="hover:text-accent musical-transition">Musical Journey</a></li>
+                  <li><a href="/collaborations" className="hover:text-accent musical-transition">Collaborations</a></li>
+                  <li><a href="/live-performances" className="hover:text-accent musical-transition">Live Experiences</a></li>
+                  <li><a href="/recognition" className="hover:text-accent musical-transition">Recognition</a></li>
                 </ul>
               </div>
 
