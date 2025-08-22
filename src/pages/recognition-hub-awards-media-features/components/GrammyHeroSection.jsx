@@ -5,7 +5,7 @@ import Button from '../../../components/ui/Button';
 
 const GrammyHeroSection = () => {
   return (
-    <section className="relative bg-gradient-to-br from-primary/5 via-background to-accent/5 py-16 lg:py-24 overflow-hidden">
+    <section className="relative bg-gradient-to-br from-primary/5 via-background to-accent/5 py-16 lg:py-20 overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 cultural-pattern opacity-30"></div>
       
@@ -65,7 +65,7 @@ const GrammyHeroSection = () => {
             </div>
 
             {/* Action Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4">
+            {/* <div className="flex flex-col sm:flex-row gap-4">
               <Button
                 variant="default"
                 className="musical-hover grammy-border"
@@ -84,7 +84,7 @@ const GrammyHeroSection = () => {
               >
                 Download Press Kit
               </Button>
-            </div>
+            </div> */}
           </div>
 
           {/* Visual Section */}

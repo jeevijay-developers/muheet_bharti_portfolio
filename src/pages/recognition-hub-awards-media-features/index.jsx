@@ -27,10 +27,10 @@ const RecognitionHub = () => {
         <AchievementTimeline />
         
         {/* Media Coverage Gallery */}
-        <MediaCoverageGallery />
+        {/* <MediaCoverageGallery /> */}
         
         {/* Press Kit Section */}
-        <PressKitSection />
+        {/* <PressKitSection /> */}
       </main>
     </div>
   );

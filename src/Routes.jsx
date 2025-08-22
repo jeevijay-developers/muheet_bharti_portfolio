@@ -20,10 +20,10 @@ const Routes = () => {
         <Route path="/" element={<HomepageImmersiveMusicalShowcase />} />
         <Route path="/" element={<HomepageImmersiveMusicalShowcase />} />
 
-        <Route path="/studio-insights" element={<StudioInsightsPage />} />
-        <Route path="/collaborations" element={<CollaborationsShowcase />} />
+        {/* <Route path="/studio-insights" element={<StudioInsightsPage />} /> */}
+        {/* <Route path="/collaborations" element={<CollaborationsShowcase />} /> */}
         <Route path="/recognition" element={<RecognitionHub />} />
-        <Route path="/live-performances" element={<LiveExperiencesPerformanceGallery />} />
+        {/* <Route path="/live-performances" element={<LiveExperiencesPerformanceGallery />} /> */}
         <Route path="/journey" element={<MusicalJourneyPage />} />
         <Route path="*" element={<NotFound />} />
       </RouterRoutes>

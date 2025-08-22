@@ -19,30 +19,35 @@ const Header = () => {
       path: '/journey',
       icon: 'MapPin'
     },
-    { 
-      name: 'Collaborations', 
-      path: '/collaborations',
-      icon: 'Users'
-    },
-    { 
-      name: 'Live', 
-      path: '/live-performances',
-      icon: 'Music'
-    },
-    { 
-      name: 'Studio', 
-      path: '/studio-insights',
-      icon: 'Mic'
-    }
-  ];
-
-  const moreItems = [
+    // { 
+    //   name: 'Collaborations', 
+    //   path: '/collaborations',
+    //   icon: 'Users'
+    // },
+    // { 
+    //   name: 'Live', 
+    //   path: '/live-performances',
+    //   icon: 'Music'
+    // },
+    // { 
+    //   name: 'Studio', 
+    //   path: '/studio-insights',
+    //   icon: 'Mic'
+    // }
     { 
       name: 'Recognition', 
       path: '/recognition',
       icon: 'Award'
     }
   ];
+
+  // const moreItems = [
+  //   { 
+  //     name: 'Recognition', 
+  //     path: '/recognition',
+  //     icon: 'Award'
+  //   }
+  // ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -69,37 +74,34 @@ const Header = () => {
     <header 
       className={`fixed top-0 left-0 right-0 z-navigation musical-transition ${
         isScrolled 
-          ? 'bg-background/95 backdrop-blur-md shadow-contemplative' 
-          : 'bg-background/80'
+          ? 'bg-white shadow-contemplative' 
+          : 'bg-white'
       }`}
     >
       <div className="w-full">
         <div className="flex items-center justify-between h-16 px-6 lg:px-8">
           {/* Logo Section */}
           <Link 
-            to="/homepage-immersive-musical-showcase" 
+            to="/" 
             className="flex items-center space-golden musical-hover group"
             onClick={closeMenu}
           >
             <div className="relative">
-              <div className="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center shadow-cultural">
-                <Icon 
-                  name="Music" 
-                  size={20} 
-                  color="white" 
-                  className="group-hover:animate-sitar-vibrate" 
+              <div className="w-10 h-10 rounded-full flex items-center justify-center shadow-cultural">
+                <img
+                  src='/assets/muheet-logo.svg'
                 />
               </div>
               <div className="absolute -top-1 -right-1 w-3 h-3 bg-accent rounded-full grammy-glow opacity-80"></div>
             </div>
-            <div className="ml-3">
-              <h1 className="text-headline text-lg font-bold text-foreground">
+            {/* <div className="ml-3">
+              <h1 className="text-headline font-bold text-foreground">
                 Muheet Bharti
               </h1>
               <p className="text-accent text-xs font-medium tracking-wide">
                 Grammy Nominated
               </p>
-            </div>
+            </div> */}
           </Link>
 
           {/* Desktop Navigation */}
@@ -125,7 +127,7 @@ const Header = () => {
             ))}
 
             {/* More Dropdown */}
-            <div className="relative group">
+            {/* <div className="relative group">
               <button className="flex items-center px-4 py-2 rounded-lg text-muted-foreground hover:text-primary hover:bg-primary/5 musical-transition">
                 <Icon name="MoreHorizontal" size={16} className="mr-2" />
                 <span className="text-body font-medium">More</span>
@@ -149,11 +151,11 @@ const Header = () => {
                   ))}
                 </div>
               </div>
-            </div>
+            </div> */}
           </nav>
 
           {/* CTA Button */}
-          <div className="hidden lg:flex items-center space-fifth">
+          {/* <div className="hidden lg:flex items-center space-fifth">
             <Button
               variant="outline"
               size="sm"
@@ -174,7 +176,7 @@ const Header = () => {
             >
               Collaborate
             </Button>
-          </div>
+          </div> */}
 
           {/* Mobile Menu Button */}
           <button
@@ -198,7 +200,7 @@ const Header = () => {
         >
           <div className="px-6 py-4 bg-surface/50 backdrop-blur-sm border-t border-border">
             <nav className="space-y-2">
-              {[...navigationItems, ...moreItems]?.map((item) => (
+              {[...navigationItems]?.map((item) => (
                 <Link
                   key={item?.path}
                   to={item?.path}
@@ -219,7 +221,7 @@ const Header = () => {
             </nav>
 
             {/* Mobile CTA Buttons */}
-            <div className="mt-6 space-y-3">
+            {/* <div className="mt-6 space-y-3">
               <Button
                 variant="outline"
                 fullWidth
@@ -239,10 +241,10 @@ const Header = () => {
               >
                 Collaborate
               </Button>
-            </div>
+            </div> */}
 
             {/* Grammy Recognition Badge */}
-            <div className="mt-6 p-4 bg-gradient-to-r from-primary/10 to-accent/10 rounded-lg border border-accent/20">
+            {/* <div className="mt-6 p-4 bg-gradient-to-r from-primary/10 to-accent/10 rounded-lg border border-accent/20">
               <div className="flex items-center">
                 <div className="w-8 h-8 bg-accent rounded-full flex items-center justify-center grammy-glow">
                   <Icon name="Award" size={16} color="white" />
@@ -252,7 +254,7 @@ const Header = () => {
                   <p className="text-xs text-muted-foreground">Classical Fusion Excellence</p>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

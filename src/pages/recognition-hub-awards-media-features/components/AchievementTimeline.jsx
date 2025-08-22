@@ -64,47 +64,65 @@ const AchievementTimeline = () => {
       description: `Recognized by Berklee College of Music for exceptional achievement in world music fusion 
       and for representing the institution's values of musical innovation and cultural bridge-building 
       on the global stage.`,
-      significance: 'Academic excellence recognition',image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9d1?w=400&h=300&fit=crop',icon: 'GraduationCap',color: 'accent'
+      significance: 'Academic excellence recognition',
+      image: '/assets/images/college.jpg',
+      icon: 'GraduationCap',
+      color: 'accent'
     },
     {
       id: 5,
-      category: 'cultural',year: '2022',title: 'Sangeet Natak Akademi Recognition',subtitle: 'Young Artist Fellowship',
-      description: `Selected for the prestigious Young Artist Fellowship by India's National Academy of Music, 
-      Dance & Drama. This recognition acknowledges exceptional talent in preserving and promoting 
-      Indian classical music traditions.`,
-      significance: 'National cultural institution honor',
-      image: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&h=300&fit=crop',
+      category: 'cultural',
+      year: '2023',
+      title: 'UNESCO Cultural Ambassador',
+      subtitle: 'Indian Classical Music Preservation',
+      description: `Appointed as UNESCO Cultural Ambassador for Indian Classical Music Preservation, 
+      recognizing efforts in documenting and teaching the Senia Gharana tradition to future generations 
+      and promoting cultural understanding through music.`,
+      significance: 'International cultural recognition',
+      image: '/assets/images/ancestoral_image.jpg',
       icon: 'Globe',
       color: 'primary'
     },
     {
       id: 6,
       category: 'media',
-      year: '2023',
-      title: 'BBC World Service Interview',
-      subtitle: 'Global Music Spotlight',
-      description: `Featured in BBC World Service's Global Music program, discussing the evolution of Indian 
-      classical music and its influence on contemporary world music. The interview reached audiences 
-      across 40 countries.`,
-      significance: 'International media platform',image: 'https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=400&h=300&fit=crop',icon: 'Radio',color: 'secondary'
+      year: '2022',
+      title: 'BBC World Service Feature',
+      subtitle: 'Masters of Music Documentary',
+      description: `Featured in BBC World Service documentary "Masters of Music: Modern Senia" showcasing 
+      the evolution of classical Indian music and its adaptation for global audiences while maintaining 
+      traditional authenticity.`,
+      significance: 'International media coverage',
+      image: '/assets/banners/awards.jpg',
+      icon: 'Radio',
+      color: 'secondary'
     },
     {
       id: 7,
-      category: 'industry',year: '2021',title: 'Filmfare Award Nomination',subtitle: 'Best Background Score - "Raag Reimagined"',
-      description: `Nominated for Filmfare Award for the innovative background score that seamlessly blended 
-      classical ragas with cinematic orchestration. The work was praised for its emotional depth 
-      and technical excellence.`,
-      significance: 'Film industry recognition',image: 'https://images.unsplash.com/photo-1489599162946-648229acc58f?w=400&h=300&fit=crop',icon: 'Film',color: 'accent'
+      category: 'industry',
+      year: '2021',
+      title: 'Music India Award',
+      subtitle: 'Classical Musician of the Year',
+      description: `Honored with the Classical Musician of the Year award for outstanding contribution 
+      to preserving and innovating within the Senia Gharana tradition, and for exceptional performances 
+      that bridge classical and contemporary music.`,
+      significance: 'National industry recognition',
+      image: '/assets/banners/billboards.jpg',
+      icon: 'Award',
+      color: 'accent'
     },
     {
       id: 8,
-      category: 'cultural',year: '2020',title: 'UNESCO Cultural Ambassador',subtitle: 'Music for Peace Initiative',
-      description: `Appointed as Cultural Ambassador for UNESCO's Music for Peace initiative, promoting 
-      cross-cultural understanding through music. The role involves creating musical bridges 
-      between diverse communities worldwide.`,
-      significance: 'International cultural diplomacy',
-      image: 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=400&h=300&fit=crop',
-      icon: 'Heart',
+      category: 'cultural',
+      year: '2020',
+      title: 'Sangeet Natak Akademi Recognition',
+      subtitle: 'Young Artist Fellowship',
+      description: `Received the prestigious Young Artist Fellowship from Sangeet Natak Akademi, 
+      India's National Academy of Music, Dance and Drama, for exceptional talent and dedication 
+      to preserving classical Indian musical traditions.`,
+      significance: 'National cultural institution honor',
+      image: '/assets/images/classic_musicians.jpg',
+      icon: 'Music',
       color: 'primary'
     }
   ];
@@ -114,33 +132,33 @@ const AchievementTimeline = () => {
     : achievements?.filter(achievement => achievement?.category === activeCategory);
 
   return (
-    <section className="py-16 lg:py-24 bg-background">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+    <section className="py-12 md:py-16 lg:py-24 bg-background">
+      <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-headline text-3xl lg:text-4xl font-bold text-foreground mb-4">
+        <div className="text-center mb-12 lg:mb-16">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground mb-4">
             Achievement Timeline
           </h2>
-          <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
+          <p className="text-muted-foreground text-base md:text-lg max-w-2xl lg:max-w-3xl mx-auto px-4">
             A comprehensive journey through recognition, awards, and acknowledgments that mark 
             significant milestones in artistic and cultural contribution.
           </p>
         </div>
 
         {/* Category Filters */}
-        <div className="flex flex-wrap justify-center gap-3 mb-12">
+        <div className="flex flex-wrap justify-center gap-2 md:gap-3 mb-8 lg:mb-12 px-4">
           {categories?.map((category) => (
             <button
               key={category?.id}
               onClick={() => setActiveCategory(category?.id)}
-              className={`flex items-center px-4 py-2 rounded-full musical-transition ${
+              className={`flex items-center px-3 md:px-4 py-2 rounded-full musical-transition text-xs md:text-sm ${
                 activeCategory === category?.id
                   ? 'bg-primary text-primary-foreground shadow-contemplative'
                   : 'bg-surface text-muted-foreground hover:bg-primary/10 hover:text-primary'
               }`}
             >
-              <Icon name={category?.icon} size={16} className="mr-2" />
-              <span className="text-sm font-medium">{category?.name}</span>
+              <Icon name={category?.icon} size={14} className="mr-1 md:mr-2" />
+              <span className="font-medium whitespace-nowrap">{category?.name}</span>
             </button>
           ))}
         </div>
@@ -148,70 +166,67 @@ const AchievementTimeline = () => {
         {/* Timeline */}
         <div className="relative">
           {/* Timeline Line */}
-          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-border hidden lg:block"></div>
+          <div className="absolute left-4 md:left-1/2 md:transform md:-translate-x-px top-0 bottom-0 w-0.5 bg-border"></div>
 
-          <div className="space-y-12">
+          <div className="space-y-6 md:space-y-8 lg:space-y-10">
             {filteredAchievements?.map((achievement, index) => (
               <div
                 key={achievement?.id}
-                className={`relative flex flex-col lg:flex-row gap-8 ${
-                  index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'
+                className={`relative flex flex-col md:flex-row gap-4 md:gap-8 ${
+                  index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
                 }`}
               >
                 {/* Timeline Dot */}
-                <div className="hidden lg:flex absolute left-6 w-5 h-5 bg-primary rounded-full border-4 border-background shadow-contemplative z-10"></div>
+                <div className="absolute left-2 md:left-1/2 md:transform md:-translate-x-1/2 w-4 h-4 md:w-5 md:h-5 bg-primary rounded-full border-2 md:border-4 border-background shadow-contemplative z-10 top-6"></div>
 
                 {/* Content Card */}
-                <div className={`flex-1 ${index % 2 === 0 ? 'lg:pr-16' : 'lg:pl-16'}`}>
-                  <div className="bg-card rounded-2xl p-8 shadow-contemplative border border-border musical-hover group">
+                <div className={`flex-1 ml-8 md:ml-0 ${
+                  index % 2 === 0 
+                    ? 'md:pr-6 lg:pr-12 xl:pr-16' 
+                    : 'md:pl-6 lg:pl-12 xl:pl-16'
+                }`}>
+                  <div className="bg-card rounded-xl lg:rounded-2xl p-4 md:p-5 lg:p-6 shadow-contemplative border border-border musical-hover group max-w-2xl mx-auto md:max-w-lg lg:max-w-xl xl:max-w-2xl">
                     {/* Header */}
-                    <div className="flex items-start justify-between mb-6">
-                      <div className="flex items-center space-x-4">
-                        <div className={`w-12 h-12 bg-${achievement?.color} rounded-full flex items-center justify-center`}>
-                          <Icon name={achievement?.icon} size={20} color="white" />
+                    <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-4 md:mb-6 gap-3">
+                      <div className="flex items-start space-x-3 md:space-x-4">
+                        <div className={`w-10 h-10 md:w-12 md:h-12 bg-${achievement?.color} rounded-full flex items-center justify-center flex-shrink-0`}>
+                          <Icon name={achievement?.icon} size={18} color="white" className="md:w-5 md:h-5" />
                         </div>
-                        <div>
-                          <div className="flex items-center space-x-3 mb-1">
-                            <h3 className="text-headline text-xl font-bold text-foreground">
+                        <div className="min-w-0 flex-1">
+                          <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-3 mb-1 gap-1">
+                            <h3 className="text-lg md:text-xl font-bold text-foreground leading-tight">
                               {achievement?.title}
                             </h3>
-                            <span className="px-3 py-1 bg-accent/10 text-accent text-sm font-medium rounded-full">
+                            <span className="px-2 md:px-3 py-1 bg-accent/10 text-accent text-xs md:text-sm font-medium rounded-full w-fit">
                               {achievement?.year}
                             </span>
                           </div>
-                          <p className="text-primary font-medium">{achievement?.subtitle}</p>
+                          <p className="text-primary font-medium text-sm md:text-base">{achievement?.subtitle}</p>
                         </div>
                       </div>
                     </div>
 
                     {/* Image */}
-                    <div className="mb-6 overflow-hidden rounded-lg">
+                    <div className="mb-4 md:mb-5 overflow-hidden rounded-lg">
                       <Image
                         src={achievement?.image}
                         alt={achievement?.title}
-                        className="w-full h-48 object-cover group-hover:scale-105 musical-transition"
+                        className="w-full h-40 md:h-44 lg:h-48 xl:h-52 object-cover group-hover:scale-105 musical-transition"
                       />
                     </div>
 
                     {/* Description */}
-                    <p className="text-muted-foreground leading-relaxed mb-4">
+                    <p className="text-muted-foreground leading-relaxed mb-3 md:mb-4 text-sm md:text-base">
                       {achievement?.description}
                     </p>
 
                     {/* Significance Badge */}
                     <div className="inline-flex items-center px-3 py-1 bg-surface rounded-full">
-                      <Icon name="Star" size={14} className="text-accent mr-2" />
-                      <span className="text-sm font-medium text-foreground">
+                      <Icon name="Star" size={12} className="text-accent mr-2 md:w-3.5 md:h-3.5" />
+                      <span className="text-xs md:text-sm font-medium text-foreground">
                         {achievement?.significance}
                       </span>
                     </div>
-                  </div>
-                </div>
-
-                {/* Year Badge (Mobile) */}
-                <div className="lg:hidden flex justify-center">
-                  <div className="px-4 py-2 bg-primary text-primary-foreground rounded-full font-bold">
-                    {achievement?.year}
                   </div>
                 </div>
               </div>
@@ -220,34 +235,34 @@ const AchievementTimeline = () => {
         </div>
 
         {/* Stats Summary */}
-        <div className="mt-16 grid grid-cols-2 lg:grid-cols-4 gap-6">
-          <div className="text-center p-6 bg-card rounded-lg border border-border">
-            <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center mx-auto mb-3 grammy-glow">
-              <Icon name="Award" size={20} color="white" />
+        <div className="mt-12 lg:mt-16 grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4 lg:gap-6 px-4">
+          <div className="text-center p-4 md:p-6 bg-card rounded-lg border border-border">
+            <div className="w-10 h-10 md:w-12 md:h-12 bg-accent rounded-full flex items-center justify-center mx-auto mb-2 md:mb-3 grammy-glow">
+              <Icon name="Award" size={16} color="white" className="md:w-5 md:h-5" />
             </div>
-            <div className="text-2xl font-bold text-foreground mb-1">8+</div>
-            <div className="text-sm text-muted-foreground">Major Awards</div>
+            <div className="text-xl md:text-2xl font-bold text-foreground mb-1">8+</div>
+            <div className="text-xs md:text-sm text-muted-foreground">Major Awards</div>
           </div>
-          <div className="text-center p-6 bg-card rounded-lg border border-border">
-            <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-3">
-              <Icon name="Newspaper" size={20} color="white" />
+          <div className="text-center p-4 md:p-6 bg-card rounded-lg border border-border">
+            <div className="w-10 h-10 md:w-12 md:h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-2 md:mb-3">
+              <Icon name="Newspaper" size={16} color="white" className="md:w-5 md:h-5" />
             </div>
-            <div className="text-2xl font-bold text-foreground mb-1">25+</div>
-            <div className="text-sm text-muted-foreground">Media Features</div>
+            <div className="text-xl md:text-2xl font-bold text-foreground mb-1">25+</div>
+            <div className="text-xs md:text-sm text-muted-foreground">Media Features</div>
           </div>
-          <div className="text-center p-6 bg-card rounded-lg border border-border">
-            <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center mx-auto mb-3">
-              <Icon name="Globe" size={20} color="white" />
+          <div className="text-center p-4 md:p-6 bg-card rounded-lg border border-border">
+            <div className="w-10 h-10 md:w-12 md:h-12 bg-secondary rounded-full flex items-center justify-center mx-auto mb-2 md:mb-3">
+              <Icon name="Globe" size={16} color="white" className="md:w-5 md:h-5" />
             </div>
-            <div className="text-2xl font-bold text-foreground mb-1">15+</div>
-            <div className="text-sm text-muted-foreground">Countries Reached</div>
+            <div className="text-xl md:text-2xl font-bold text-foreground mb-1">15+</div>
+            <div className="text-xs md:text-sm text-muted-foreground">Countries Reached</div>
           </div>
-          <div className="text-center p-6 bg-card rounded-lg border border-border">
-            <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center mx-auto mb-3">
-              <Icon name="Users" size={20} color="white" />
+          <div className="text-center p-4 md:p-6 bg-card rounded-lg border border-border">
+            <div className="w-10 h-10 md:w-12 md:h-12 bg-accent rounded-full flex items-center justify-center mx-auto mb-2 md:mb-3">
+              <Icon name="Users" size={16} color="white" className="md:w-5 md:h-5" />
             </div>
-            <div className="text-2xl font-bold text-foreground mb-1">1M+</div>
-            <div className="text-sm text-muted-foreground">People Reached</div>
+            <div className="text-xl md:text-2xl font-bold text-foreground mb-1">1M+</div>
+            <div className="text-xs md:text-sm text-muted-foreground">People Reached</div>
           </div>
         </div>
       </div>

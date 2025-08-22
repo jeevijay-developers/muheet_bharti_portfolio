@@ -17,10 +17,10 @@ const MusicalJourneyPage = () => {
       <TimelineSection />
       
       {/* Audio Evolution Comparison */}
-      <AudioComparison />
+      {/* <AudioComparison /> */}
       
       {/* Industry Testimonials */}
-      <CollaboratorTestimonials />
+      {/* <CollaboratorTestimonials /> */}
       
       {/* Cultural Bridge Section */}
       <section className="py-16 lg:py-24 bg-gradient-to-r from-primary/5 via-accent/5 to-secondary/5">
@@ -83,7 +83,7 @@ const MusicalJourneyPage = () => {
               </blockquote>
               <div className="mt-6 flex items-center justify-center space-x-4">
                 <div className="w-12 h-12 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center">
-                  <span className="text-white font-bold">MB</span>
+                  <span className="text-white font-bold"><img src='public/assets/banners/onStage.jpg' className='rounded-full size-12 object-cover' /></span>
                 </div>
                 <div className="text-left">
                   <p className="text-body font-semibold text-foreground">Muheet Bharti</p>

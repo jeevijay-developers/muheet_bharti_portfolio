@@ -33,10 +33,10 @@ const HomepageImmersiveMusicalShowcase = () => {
           <RotatingShowcase />
           
           {/* Social Proof and Industry Recognition */}
-          <SocialProofSection />
+          {/* <SocialProofSection /> */}
           
           {/* Floating Audio Player */}
-          <FloatingAudioPlayer />
+          {/* <FloatingAudioPlayer /> */}
         </main>
 
         {/* Footer */}
@@ -65,8 +65,8 @@ const HomepageImmersiveMusicalShowcase = () => {
                 <h4 className="font-semibold mb-4">Explore</h4>
                 <ul className="space-y-2 text-background/80">
                   <li><a href="/journey" className="hover:text-accent musical-transition">Musical Journey</a></li>
-                  <li><a href="/collaborations" className="hover:text-accent musical-transition">Collaborations</a></li>
-                  <li><a href="/live-performances" className="hover:text-accent musical-transition">Live Experiences</a></li>
+                  {/* <li><a href="/collaborations" className="hover:text-accent musical-transition">Collaborations</a></li> */}
+                  {/* <li><a href="/live-performances" className="hover:text-accent musical-transition">Live Experiences</a></li> */}
                   <li><a href="/recognition" className="hover:text-accent musical-transition">Recognition</a></li>
                 </ul>
               </div>
@@ -75,13 +75,13 @@ const HomepageImmersiveMusicalShowcase = () => {
               <div>
                 <h4 className="font-semibold mb-4">Connect</h4>
                 <div className="space-y-3">
-                  <a href="#" className="flex items-center space-x-2 text-background/80 hover:text-accent musical-transition">
+                  <a href="https://open.spotify.com/artist/0HXiaOEvokxAkvyMIq88jJ?nd=1&dlsi=b6b61ecebd75459b" target='_blank' className="flex items-center space-x-2 text-background/80 hover:text-accent musical-transition">
                     <span>Spotify</span>
                   </a>
-                  <a href="#" className="flex items-center space-x-2 text-background/80 hover:text-accent musical-transition">
+                  <a href="https://www.youtube.com/@MuheetBhartiOfficial" target='_blank' className="flex items-center space-x-2 text-background/80 hover:text-accent musical-transition">
                     <span>YouTube</span>
                   </a>
-                  <a href="#" className="flex items-center space-x-2 text-background/80 hover:text-accent musical-transition">
+                  <a href="https://www.instagram.com/muheetbharti/" target='_blank' className="flex items-center space-x-2 text-background/80 hover:text-accent musical-transition">
                     <span>Instagram</span>
                   </a>
                 </div>

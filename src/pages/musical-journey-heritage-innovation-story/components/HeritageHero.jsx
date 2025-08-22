@@ -1,11 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import Icon from '../../../components/AppIcon';
 import Image from '../../../components/AppImage';
-import Button from '../../../components/ui/Button';
 
 const HeritageHero = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [isPlaying, setIsPlaying] = useState(false);
 
   const ancestralImages = [
     {
@@ -36,9 +33,9 @@ const HeritageHero = () => {
     return () => clearInterval(interval);
   }, []);
 
-  const handlePlayAmbient = () => {
-    setIsPlaying(!isPlaying);
-  };
+  // const handlePlayAmbient = () => {
+  //   setIsPlaying(!isPlaying);
+  // };
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden cultural-pattern">
@@ -65,15 +62,15 @@ const HeritageHero = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 text-center">
         <div className="max-w-4xl mx-auto">
           {/* Era Indicator */}
-          <div className="inline-flex items-center space-x-3 bg-surface/80 backdrop-blur-sm rounded-full px-6 py-3 mb-8 border border-border">
+          {/* <div className="inline-flex items-center space-x-3 bg-surface/80 backdrop-blur-sm rounded-full px-6 py-3 mb-8 border border-border">
             <div className="w-3 h-3 bg-accent rounded-full grammy-glow" />
             <span className="text-accent font-medium">
               {ancestralImages?.[currentImageIndex]?.era}
             </span>
-          </div>
+          </div> */}
 
           {/* Main Heading */}
-          <h1 className="text-headline lg:text-7xl font-bold text-white mb-6 leading-tight">
+          <h1 className="mt-20 text-headline lg:text-7xl font-bold text-white mb-6 leading-tight">
             Where Centuries of
             <span className="block text-primary ">
               Tradition Meet
@@ -111,7 +108,7 @@ const HeritageHero = () => {
           </div>
 
           {/* Action Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
+          {/* <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
             <Button
               variant="default"
               size="lg"
@@ -133,10 +130,10 @@ const HeritageHero = () => {
             >
               Explore Journey
             </Button>
-          </div>
+          </div> */}
 
           {/* Ambient Audio Visualizer */}
-          {isPlaying && (
+          {/* {isPlaying && (
             <div className="flex items-center justify-center space-x-2 mb-8">
               <Icon name="Music" size={16} className="text-primary" />
               <div className="flex space-x-1">
@@ -153,7 +150,7 @@ const HeritageHero = () => {
               </div>
               <span className="text-sm text-white/80">Senia Gharana Ambience</span>
             </div>
-          )}
+          )} */}
         </div>
       </div>
       {/* Image Navigation Dots */}
@@ -174,14 +171,14 @@ const HeritageHero = () => {
         </div>
       </div>
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 right-8 z-10 hidden lg:block">
+      {/* <div className="absolute bottom-8 right-8 z-10 hidden lg:block">
         <div className="flex flex-col items-center space-y-2 text-white/80">
           <span className="text-sm rotate-90 origin-center whitespace-nowrap">Scroll to explore</span>
           <div className="w-px h-12 bg-border">
             <div className="w-px h-6 bg-primary animate-pulse" />
           </div>
         </div>
-      </div>
+      </div> */}
       {/* Cultural Pattern Overlay */}
       <div className="absolute inset-0 pointer-events-none opacity-5">
         <div className="w-full h-full bg-repeat" style={{

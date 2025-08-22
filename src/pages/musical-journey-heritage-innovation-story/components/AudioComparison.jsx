@@ -86,7 +86,7 @@ const AudioComparison = () => {
             <Icon name="Headphones" size={20} className="text-accent" />
             <span className="text-accent font-medium">Audio Evolution</span>
           </div>
-          <h2 className="text-headline text-4xl lg:text-5xl font-bold text-foreground mb-6">
+          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
             Traditional vs Contemporary
           </h2>
           <p className="text-body text-lg text-muted-foreground max-w-3xl mx-auto">

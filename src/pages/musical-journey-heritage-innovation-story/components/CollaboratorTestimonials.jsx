@@ -93,7 +93,7 @@ const CollaboratorTestimonials = () => {
               />
 
               {/* Video Play Overlay */}
-              <div className="absolute inset-0 bg-background/20 flex items-center justify-center">
+              {/* <div className="absolute inset-0 bg-background/20 flex items-center justify-center">
                 <Button
                   variant="default"
                   size="lg"
@@ -102,7 +102,7 @@ const CollaboratorTestimonials = () => {
                   iconName={isVideoPlaying ? "Pause" : "Play"}
                   iconSize={24}
                 />
-              </div>
+              </div> */}
             </div>
 
             {/* Project Info */}
