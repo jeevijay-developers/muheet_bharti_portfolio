@@ -34,7 +34,7 @@ const AchievementTimeline = () => {
       category: 'industry',
       year: '2022',
       title: 'IRAA Award Winner',
-      subtitle: 'Best Classical Fusion Artist',
+      subtitle: 'Awarded excellence in Audio Engineering for Doob jaa - Bhoomi 2022',
       description: `Honored by the Indian Recording Arts Academy for outstanding contribution to classical fusion music. 
       This recognition celebrates the innovative approach to preserving and evolving traditional Indian classical music.`,
       significance: 'Premier recognition in Indian music industry',
@@ -71,20 +71,6 @@ const AchievementTimeline = () => {
       color: 'accent'
     },
     {
-      id: 6,
-      category: 'media',
-      year: '2022',
-      title: 'BBC World Service Feature',
-      subtitle: 'Masters of Music Documentary',
-      description: `Featured in BBC World Service documentary "Masters of Music: Modern Senia" showcasing 
-      the evolution of classical Indian music and its adaptation for global audiences while maintaining 
-      traditional authenticity.`,
-      significance: 'International media coverage',
-      image: '/assets/banners/bbc.jpg',
-      icon: 'Radio',
-      color: 'secondary'
-    },
-    {
       id: 7,
       category: 'industry',
       year: '2021',
@@ -98,20 +84,6 @@ const AchievementTimeline = () => {
       icon: 'Award',
       color: 'accent'
     },
-    {
-      id: 8,
-      category: 'cultural',
-      year: '2020',
-      title: 'Sangeet Natak Akademi Recognition',
-      subtitle: 'Young Artist Fellowship',
-      description: `Received the prestigious Young Artist Fellowship from Sangeet Natak Akademi, 
-      India's National Academy of Music, Dance and Drama, for exceptional talent and dedication 
-      to preserving classical Indian musical traditions.`,
-      significance: 'National cultural institution honor',
-      image: '/assets/images/classic_musicians.jpg',
-      icon: 'Music',
-      color: 'primary'
-    }
   ];
 
   const filteredAchievements = activeCategory === 'all' 

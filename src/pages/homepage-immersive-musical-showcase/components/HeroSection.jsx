@@ -91,13 +91,13 @@ const HeroSection = () => {
             <div className="space-y-8">
               {/* Main Heading */}
               <div className="space-y-4">
-                <div className="flex items-center space-x-3 mb-4">
+                {/* <div className="flex items-center space-x-3 mb-4">
                   <div className="w-2 h-16 bg-primary rounded-full"></div>
                   <div>
                     <p className="text-accent font-accent text-lg">18 Generations of Musical Heritage</p>
                     <p className="text-muted-foreground text-sm">Senia Gharana Tradition</p>
                   </div>
-                </div>
+                </div> */}
                 
                 <h1 className="text-headline lg:text-7xl font-bold text-foreground leading-tight">
                   Where Centuries

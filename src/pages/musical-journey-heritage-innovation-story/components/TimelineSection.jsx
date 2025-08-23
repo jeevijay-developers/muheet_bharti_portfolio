@@ -11,16 +11,10 @@ const TimelineSection = () => {
       id: 'roots',
       title: 'Ancestral Roots & Ustad Jamal Khan',
       subtitle: '1500s - 1900s',
-      description: `The Senia Gharana tradition begins with Mian Tansen, one of the nine jewels of Emperor Akbar's court. Our family lineage carries forward this 500-year legacy through legendary figures like my great grandfather, Ustad Jamal Khan of Maihar Gharana. A revered master who trained the legendary ghazal king Jagjit Singh in all prominent styles of Hindustani Classical vocal tradition including Khayal, Dhrupad, and Thumri, Ustad Jamal Khan's teachings shaped the voice that would later revolutionize ghazal music.`,
+      description: `The Senia Gharana tradition begins with Mian Tansen, one of the nine jewels of Emperor Akbar's court. Our family lineage carries forward this 500-year legacy through legendary figures like my great grandfather, Ustad Jamal Khan of Senia Gharana. A revered master who trained the legendary ghazal king Jagjit Singh in all prominent styles of Hindustani Classical vocal tradition including Khayal, Dhrupad, and Thumri, Ustad Jamal Khan's teachings shaped the voice that would later revolutionize ghazal music.`,
       image: '/assets/images/jamal4-3.jpg',
       audioSample: 'Raga Yaman - Traditional Alap',
-      highlights: [
-        'Mian Tansen\'s court legacy',
-        'Ustad Jamal Khan - Guru to Jagjit Singh',
-        'Maihar Gharana classical tradition',
-        'Master of Khayal, Dhrupad & Thumri',
-        'Shaped the legendary ghazal revolution'
-      ],
+
     },
     {
       id: 'learning',
@@ -29,15 +23,10 @@ const TimelineSection = () => {
       description: `Growing up immersed in the sounds of tabla, sitar, and harmonium, I began my formal training at age 5 under the guidance of my grandfather, carrying forward the legacy of Ustad Jamal Khan. The rigorous discipline of classical training shaped not just my technique, but my understanding of music as a spiritual practice and cultural responsibility, following the same guru-shishya tradition that produced legends like Jagjit Singh.`,
       image: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop',
       audioSample: 'Early Raga Studies - Bhairav',
-      highlights: [
-        'Started training at age 5',
-        'Guidance from Ustad Muheet Khan',
-        'Mastery of traditional instruments',
-        'Deep spiritual connection to music'
-      ],
+
       culturalTerms: [
         { term: 'Ustad', definition: 'A master or teacher, especially in music or other arts' },
-        { term: 'Maihar Gharana', definition: 'A musical lineage founded by Allauddin Khan, known for its rigorous training and versatility' },
+        { term: 'Senia Gharana', definition: 'A musical lineage founded by Allauddin Khan, known for its rigorous training and versatility' },
         { term: 'Khayal', definition: 'The most prominent form of North Indian classical vocal music, emphasizing improvisation' },
         { term: 'Dhrupad', definition: 'The oldest surviving form of Hindustani classical music, known for its meditative quality' },
         { term: 'Thumri', definition: 'A semi-classical vocal form expressing romantic and devotional themes' }
@@ -50,12 +39,7 @@ const TimelineSection = () => {
       description: `At Berklee College of Music, I discovered how Western music theory could enhance rather than replace classical Indian traditions. This fusion of analytical precision with intuitive raga knowledge created a unique compositional voice that honors both worlds while creating something entirely new.`,
       image: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop',
       audioSample: 'Fusion Composition - East Meets West',
-      highlights: [
-        'Berklee College of Music graduate',
-        'Fusion of Eastern and Western theory',
-        'Development of unique compositional voice',
-        'Academic excellence in contemporary music'
-      ],
+
       culturalTerms: [
         { term: 'Fusion', definition: 'A musical style that combines elements from different musical traditions' },
         { term: 'Composition', definition: 'The art of creating music through arrangement of sounds and silence' }
@@ -68,12 +52,7 @@ const TimelineSection = () => {
       description: `The Grammy win for the album "Shuruaat" as a vocalist marked a pivotal moment where traditional Indian classical music gained global recognition through contemporary production. This achievement in the Best Global Music Album category at the 65th Grammy Awards in 2022 opened new pathways for cultural exchange through music.`,
       image: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop',
       audioSample: 'Grammy Winner - Shuruaat Album',
-      highlights: [
-        'Grammy nomination achievement',
-        'Collaborations with music legends',
-        'Global recognition of Indian classical fusion',
-        'Cultural bridge through contemporary music'
-      ],
+
       culturalTerms: [
         { term: 'Grammy', definition: 'Prestigious awards presented by The Recording Academy for achievements in the music industry' },
         { term: 'Resonance', definition: 'The quality of being deep, full, and reverberating in music' }
@@ -190,21 +169,6 @@ const TimelineSection = () => {
               <p className="text-lg text-muted-foreground leading-relaxed">
                 {currentEra?.description}
               </p>
-            </div>
-
-            {/* Highlights */}
-            <div>
-              <h4 className="text-xl font-semibold text-foreground mb-4">
-                Key Highlights
-              </h4>
-              <div className="grid sm:grid-cols-2 gap-3">
-                {currentEra?.highlights?.map((highlight, index) => (
-                  <div key={index} className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-accent rounded-full flex-shrink-0" />
-                    <span className="text-body text-muted-foreground">{highlight}</span>
-                  </div>
-                ))}
-              </div>
             </div>
 
             {/* Cultural Terms */}

@@ -71,18 +71,18 @@ const RotatingShowcase = () => {
       ]
     },
     {
-      id: 'shreya-ghoshal',
-      title: 'Shreya Ghoshal — Melody Queen',
-      subtitle: 'Four-time National Award winning playback singer',
-      description: `India's most awarded female playback singer with 4 National Film Awards and numerous regional accolades. Known for her versatility across languages and genres, from classical to contemporary.`,
+      id: 'sunidhi-chauhan',
+      title: 'Sunidhi Chauhan — Powerhouse Vocalist',
+      subtitle: 'Bold vocal range and versatile playback singing legend',
+      description: `Acclaimed for her charismatic stage presence and vocal belting. Winner of multiple Filmfare Awards including "Beedi Jalaile" and "Sheila Ki Jawani". Known for her bold vocal range and versatility across genres.`,
       image: '/assets/celebs/shreya.jpg',
       icon: 'Heart',
       color: 'accent',
       link: '/collaborations',
       stats: [
-        { label: 'National Awards', value: '4' },
-        { label: 'Languages', value: '20+' },
-        { label: 'Years Active', value: '1999–present' }
+        { label: 'Filmfare Awards', value: '3' },
+        { label: 'Career Start', value: '1996' },
+        { label: 'Years Active', value: '1996–present' }
       ]
     },
     {
