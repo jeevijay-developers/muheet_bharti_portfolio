@@ -21,7 +21,7 @@ const GrammyHeroSection = () => {
 
             {/* Main Heading */}
             <div className="space-y-4">
-              <h1 className="text-headline text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground leading-tight">
+              <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground leading-tight">
                 Grammy Recognition
                 <span className="block text-primary">Excellence Acknowledged</span>
               </h1>
@@ -56,7 +56,7 @@ const GrammyHeroSection = () => {
               {/* Quote */}
               <blockquote className="bg-surface/50 p-6 rounded-lg border-l-4 border-primary">
                 <p className="text-foreground italic text-lg leading-relaxed mb-4">
-                  "Being part of the Grammy-winning album 'Shuruaat' as a vocalist represents the 
+                  "Being part of the Grammy-nominee album 'Shuruaat' as a vocalist represents the 
                   culmination of years of dedication to my craft. This achievement validates our 
                   ancestral musical heritage and its place on the world's most prestigious stage."
                 </p>
@@ -91,7 +91,7 @@ const GrammyHeroSection = () => {
           <div className="relative">
             <div className="relative bg-card rounded-2xl p-8 shadow-grandeur">
               {/* Grammy Certificate Mockup */}
-              <img src='public/assets/images/grammy-certificate-new.jpg' className='w-full h-3/6' />
+              <img src='/assets/images/grammy-certificate-new.jpg' className='w-full h-3/6' />
 
               {/* Floating Elements */}
               <div className="absolute -top-4 -right-4 w-12 h-12 bg-accent rounded-full flex items-center justify-center grammy-glow">
