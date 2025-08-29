@@ -47,12 +47,13 @@ const AchievementTimeline = () => {
       category: 'media',
       year: '2023',
       title: 'Rolling Stone India Feature',
-      subtitle: 'Artist to Watch - Classical Renaissance',
+      subtitle: 'Featured with Mitika Kanwar, Muheet Bharti, Mayank Thakur and more',
       description: `Featured as one of the artists leading the classical music renaissance in India. 
       The article highlighted the unique approach to bridging generational gaps in music appreciation 
       and bringing classical music to contemporary audiences.`,
       significance: 'Major music publication recognition',
-      image: '/assets/banners/banner1.jpg',
+      link: "https://rollingstoneindia.com/rsdailymusic-heres-what-were-listening-to-today-417/amp/",
+      image: 'public/assets/thumbnail/rollingstoneindia.jpg',
       icon: 'Newspaper',
       color: 'secondary'
     },
@@ -61,10 +62,8 @@ const AchievementTimeline = () => {
       category: 'education',
       year: '2021',
       title: 'Berklee College of Music',
-      subtitle: 'Outstanding Alumni Achievement Award',
-      description: `Recognized by Berklee College of Music for exceptional achievement in world music fusion 
-      and for representing the institution's values of musical innovation and cultural bridge-building 
-      on the global stage.`,
+      subtitle: 'Asia Scholarship Recipient & Magna Cum Laude Graduate',
+      description: `Awarded the prestigious Berklee Asia Scholarship and graduated with Magna cum laude honours in Contemporary Writing and Production. Recognized for academic excellence, creative leadership, and outstanding achievement in contemporary music education.`,
       significance: 'Academic excellence recognition',
       image: '/assets/images/college.jpg',
       icon: 'GraduationCap',
@@ -74,12 +73,10 @@ const AchievementTimeline = () => {
       id: 7,
       category: 'industry',
       year: '2021',
-      title: 'Music India Award',
-      subtitle: 'Classical Musician of the Year',
-      description: `Honored with the Classical Musician of the Year award for outstanding contribution 
-      to preserving and innovating within the Senia Gharana tradition, and for exceptional performances 
-      that bridge classical and contemporary music.`,
-      significance: 'National industry recognition',
+      title: 'Times Square Feature with Salim-Sulaiman',
+      subtitle: 'Bhoomi 22 Album – Times Square Billboard',
+      description: `Featured on the iconic Times Square billboard in New York alongside Salim-Sulaiman for the song in the Bhoomi 22 album. This milestone highlights international recognition and celebrates the global reach of Indian music collaborations.`,
+      significance: 'Global media recognition',
       image: '/assets/banners/billboards.jpg',
       icon: 'Award',
       color: 'accent'
@@ -145,10 +142,19 @@ const AchievementTimeline = () => {
                     ? 'md:pr-6 lg:pr-12 xl:pr-16' 
                     : 'md:pl-6 lg:pl-12 xl:pl-16'
                 }`}>
-                  <div className="bg-card rounded-xl lg:rounded-2xl p-4 md:p-5 lg:p-6 shadow-contemplative border border-border musical-hover group max-w-2xl mx-auto md:max-w-lg lg:max-w-xl xl:max-w-2xl">
+                  <div 
+                    className={`bg-card rounded-xl lg:rounded-2xl p-4 md:p-5 lg:p-6 shadow-contemplative border border-border musical-hover group max-w-2xl mx-auto md:max-w-lg lg:max-w-xl xl:max-w-2xl ${
+                      achievement?.link ? 'cursor-pointer hover:shadow-grandeur hover:border-primary/30 transition-all duration-300' : ''
+                    }`}
+                    onClick={() => {
+                      if (achievement?.link) {
+                        window.open(achievement.link, '_blank', 'noopener,noreferrer');
+                      }
+                    }}
+                  >
                     {/* Header */}
                     <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-4 md:mb-6 gap-3">
-                      <div className="flex items-start space-x-3 md:space-x-4">
+                      <div className="flex items-start space-x-3 md:space-x-4 flex-1">
                         <div className={`w-10 h-10 md:w-12 md:h-12 bg-${achievement?.color} rounded-full flex items-center justify-center flex-shrink-0`}>
                           <Icon name={achievement?.icon} size={18} color="white" className="md:w-5 md:h-5" />
                         </div>
@@ -164,6 +170,11 @@ const AchievementTimeline = () => {
                           <p className="text-primary font-medium text-sm md:text-base">{achievement?.subtitle}</p>
                         </div>
                       </div>
+                      {achievement?.link && (
+                        <div className="flex items-center justify-center w-8 h-8 bg-primary/10 rounded-full group-hover:bg-primary group-hover:text-white transition-all duration-300 flex-shrink-0">
+                          <Icon name="ExternalLink" size={14} className="text-primary group-hover:text-white" />
+                        </div>
+                      )}
                     </div>
 
                     {/* Image */}
