@@ -53,7 +53,7 @@ const AchievementTimeline = () => {
       and bringing classical music to contemporary audiences.`,
       significance: 'Major music publication recognition',
       link: "https://rollingstoneindia.com/rsdailymusic-heres-what-were-listening-to-today-417/amp/",
-      image: 'public/assets/thumbnail/rollingstoneindia.jpg',
+      image: '/assets/thumbnail/rollingstoneindia.jpg',
       icon: 'Newspaper',
       color: 'secondary'
     },
