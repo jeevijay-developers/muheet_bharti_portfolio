@@ -38,7 +38,12 @@ const Header = () => {
       name: 'Recognition', 
       path: '/recognition',
       icon: 'Award'
-    }
+    }, 
+    { 
+      name: 'Blogs', 
+      path: '/blogs',
+      icon: 'BookMinus'
+    }, 
   ];
 
   // const moreItems = [
