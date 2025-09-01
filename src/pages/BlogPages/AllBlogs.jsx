@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { getAllBlogs, getBlogsByTag, searchBlogs } from '../../utils/server';
+import { getBlogsByTag, getPublicBlogs, searchBlogs } from '../../utils/server';
 import Header from '../../components/ui/Header';
 import { BookOpen, Calendar, Clock, Search } from 'lucide-react';
 
@@ -36,7 +36,7 @@ const AllBlogs = () => {
           visibility: 'public'
         });
       } else {
-        response = await getAllBlogs();
+        response = await getPublicBlogs();
       }
       console.log('Fetched blogs response:', response); 
       if (response.success) {
